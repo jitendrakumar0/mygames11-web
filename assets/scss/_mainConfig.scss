@@ -1,3 +1,4 @@
+$mainOuterWidth: 360px;
 @include media-breakpoint(basic) {
   * {
     &>* {
@@ -63,6 +64,7 @@
         display: flex !important;
         flex-direction: column !important;
         width: 100% !important;
+        max-width: $mainOuterWidth;
         outline: 0 !important;
         overflow: hidden !important;
         margin: 0px !important;
