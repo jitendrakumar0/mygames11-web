@@ -1,6 +1,29 @@
 @include media-breakpoint(basic) {
-  .centerTopPart {
-    
+  .header {
+    & .innerheader {
+      & .profile {
+        & .userImage {
+          width: 40px;
+          height: 40px;
+          & img {
+            object-fit: cover;
+          }
+        }
+      }
+      & .notification {
+        & .notificationIcon {
+          width: 25px;
+          & img {
+            transition: all 0.3s;
+          }
+          &:hover{
+            & img {
+              filter: opacity(0.8);
+            }
+          }
+        }
+      }
+    }
   }
 }
 
