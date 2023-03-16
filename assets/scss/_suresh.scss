@@ -1,7 +1,39 @@
-// ? @@@@@@@@@@@@@@@@@@@@@@[  signin start  ]@@@@@@@@@@@@@@@@@@@@@@
-[data-page-name=signin] {
+.registerTxt {
+    font-size: 14px;
+    color: $gray-600;
+    font-weight: 700;
+}
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  login start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=loginPage] {
     @include media-breakpoint(basic) {
-        
+        & .mainCenterPart {
+            & .topPart{
+                height: 45%;
+                & .imgOuter{
+                    width: 160px;
+                }
+                & .title {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            & .formOuter {
+                border-radius: 26px;
+                margin-top: -112px;
+                & form {
+                    &.form {
+                        & .tagLine{
+                            font-size: 10px;
+                        }
+                        & .dividarTxt {
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -28,7 +60,7 @@
 }
 
 [data-bs-theme=dark] {
-    & [data-page-name=signin] {
+    & [data-page-name=login] {
         @include dark-media-breakpoint(basic) {
             
         }
@@ -59,5 +91,5 @@
     }
 }
 
-// ! @@@@@@@@@@@@@@@@@@@@@@[  signin start  ]@@@@@@@@@@@@@@@@@@@@@@
+// ! @@@@@@@@@@@@@@@@@@@@@@[  login start  ]@@@@@@@@@@@@@@@@@@@@@@
 
