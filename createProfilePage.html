@@ -108,7 +108,7 @@
     <body>
         <main class="container-fluid">
             <div class="row mainInner  bg-white">
-                <navbar class="col-12 header bg-theme1 py-3">
+                <navbar class="col-12 header py-3">
                     <div class="row align-items-center">
                         <div class="col">
                             <div class="title text-white text-center">Create Profile</div>
@@ -118,7 +118,7 @@
                 <div class="col-12 px-0 flex-fill" data-page-name="createProfilePage" data-scrollbar>
                     <div class="row h-100 mainCenterPart">
                         <div class="col-12">
-                            <div class="topPart bg-theme1 text-center pt-4">
+                            <div class="topPart text-center pt-4">
                                 <div class="imgOuter mx-auto">
                                     <img class="w-100" src="assets/svg/logos/logoWhite.png" alt="">
                                 </div>
@@ -131,15 +131,21 @@
                                             <div class="input-group">
                                                 <input type="text" class="form-control shadow-none py-2" placeholder="Team Name" aria-label="" aria-describedby="">
                                             </div>
-                                            <div class="input-group">
-                                                <input type="date" class="form-control shadow-none py-2" placeholder="Login Email" aria-label="" aria-describedby="">
+                                            <div class="flatpickr">
+                                                <input type="date" name="commencement" id="commencement" autocomplete="off" class="form-control form-date py-2 shadow-none" placeholder="DD/MM/YY">
                                             </div>
                                             <div class="input-group">
-                                                <select class="form-select" aria-label="Default select example">
-                                                    <option selected>Open this select menu</option>
-                                                    <option value="1">One</option>
-                                                    <option value="2">Two</option>
-                                                    <option value="3">Three</option>
+                                                <select class="form-select shadow-none" aria-label="Default select example">
+                                                    <option selected>Select State</option>
+                                                    <option value="1">Rajasthan</option>
+                                                    <option value="2">Panjab</option>
+                                                    <option value="3">Hariyana</option>
+                                                    <option value="4">Rajasthan</option>
+                                                    <option value="5">Panjab</option>
+                                                    <option value="6">Hariyana</option>
+                                                    <option value="7">Rajasthan</option>
+                                                    <option value="8">Panjab</option>
+                                                    <option value="9">Hariyana</option>
                                                 </select>
                                             </div>
                                         </div>
@@ -159,7 +165,7 @@
                 <footer class="col-12 footer py-3">
                     <div class="row">
                         <div class="col-12">
-                            <div class="footerLink text-center">Not a Member? <a href="loginPage.html" class="text-theme2 text-decoration-underline">Login</a></div>
+                            <div class="footerLink text-center">Not a Member? <a href="loginPage.html" class="text-decoration-underline">Login</a></div>
                         </div>
                     </div>
                 </footer>
@@ -167,9 +173,8 @@
         </main>
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>
         <script src="assets/libs/node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
-        <script src="assets/libs/node_modules/select2/dist/js/select2.min.js"></script>
+        <!-- <script src="assets/libs/node_modules/select2/dist/js/select2.min.js"></script> -->
         <script src="assets/libs/node_modules/flatpickr/dist/flatpickr.min.js"></script>
         <script type="module" src="assets/js/main.min.js"></script>
-        
     </body>
 </html>
