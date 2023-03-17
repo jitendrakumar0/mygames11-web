@@ -671,3 +671,243 @@
 }
 
 // ! @@@@@@@@@@@@@@@@@@@@@@[  create profile end  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  my matches start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=myMatchesPage] {
+    @include media-breakpoint(basic) {
+        & .cricketheader {
+            box-shadow: 0px 0px 6px rgba($black, 0.1) !important;
+            z-index: 1;
+            & .navtab {
+                & .nav-item {
+                    & .nav-link {
+                        font-size: 12px;
+                        font-weight: 600;
+                        transition: all 0.3s;
+                        border-bottom: 2px solid transparent;
+                        & .gameImg {
+                            height: 20px;
+                            & img {
+                                filter: grayscale(1);
+                                transition: all 0.3s;
+                            }
+                        }
+                        & .gamesheading {
+                            line-height: 100%;
+                        }
+                        &.active{
+                            background: transparent;
+                            border-color:  $theme2;
+                            color: $theme2 !important;
+                            & .gameImg {
+                                & img {
+                                    filter: grayscale(0);
+                                }
+                            }
+                        }
+                        &:hover{
+                            color: $theme2 !important;
+                            & .gameImg {
+                                & img {
+                                    filter: grayscale(0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        & .tabContents {
+            & .matchesCard {
+                box-shadow: 0px 0px 6px rgba($black, 0.08);
+                & .card-body {
+                    & .teamHeadline {
+                        & .matchteams, & .notificationOut {
+                            font-size: 11px;
+                        }
+                        & .notificationOut {
+                            color: lighten($info, 10);
+                        }
+                        & .lineupsImg {
+                            width: 18px;
+                        }
+                    }
+                    & .innerBody {
+                        & .leftSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    left: -50%;
+                                    transform: translate(0%, -50%);
+                                    // background: rgba($warning, 0.3);
+                                }
+                            }
+                        }
+                        & .rightSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    right: -50%;
+                                    transform: translate(0%, -50%);
+                                    // background: rgba($success, 0.3);
+                                    
+                                }
+                            }
+                        }
+                        & .numberOffContest{
+                            font-size: 10px;
+                            padding-top: 3px;
+                            padding-bottom: 3px;
+                            background-color: lighten($theme2, 48);
+                        }
+                        &.firstMatchBody {
+                            & .leftSideTeams {
+                                & .teamLogo {
+                                    &::before{
+                                        background: rgba($warning, 0.3);
+                                    }
+                                }
+                            }
+                            & .rightSideTeams {
+                                & .teamLogo {
+                                    &::before{
+                                        background: rgba($success, 0.3);
+                                        
+                                    }
+                                }
+                            }
+                        }
+                        &.secondMatchBody {
+                            & .leftSideTeams {
+                                & .teamLogo {
+                                    &::before{
+                                        background: rgba($success, 0.3);
+                                    }
+                                }
+                            }
+                            & .rightSideTeams {
+                                & .teamLogo {
+                                    &::before{
+                                        background: rgba($info, 0.4);
+                                    }
+                                }
+                            }
+                        }
+                        &.threedMatchBody {
+                            & .leftSideTeams {
+                                & .teamLogo {
+                                    &::before{
+                                        background: rgba($info, 0.4);
+                                    }
+                                }
+                            }
+                            & .rightSideTeams {
+                                & .teamLogo {
+                                    &::before{
+                                        background: rgba($warning, 0.3);
+                                    }
+                                }
+                            }
+                        }
+                        & .firstTeamsName {
+                            font-size: 12px;
+                        }
+                        & .team {
+                            & .teamLogo {
+                                width: 40px;
+                                height: 40px;
+                                z-index: 0;
+                                &::before{
+                                    content: "";
+                                    height: 20px;
+                                    width: 100%;
+                                    position: absolute;
+                                    top: 50%;
+                                    z-index: -1;
+                                }
+                            }
+                            & .teamName {
+                                font-size: 10px;
+                            }
+                        }
+                        & .matchTimer {
+                            & .pichTime {
+                                font-size: 10px;
+                                color: $theme2;
+                            }
+                        }
+                        & .imgOuter {
+                            width: 20px;
+                        }
+                    }
+                }
+            }
+            & .emptyState {
+                & .emptyStateOuter{
+                    & .txt {
+                        font-size: 12px;
+                    }
+                }
+                & .imgOuter{
+                    width: 120px;
+                    margin: auto;
+                }
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=myMatchesPage] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  my matches end  ]@@@@@@@@@@@@@@@@@@@@@@
