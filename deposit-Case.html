@@ -121,17 +121,36 @@
                     </div>
                 </navbar>
                 <div class="col-12 px-0 flex-fill" data-page-name="depositCasePage" data-scrollbar>
-                    <form action="" class="row mx-0 py-3 depositForm gap-3">
-                        <div class="col-12">
-                            <label for="addcase" class="form-label labelHeading text-dark fw-bold">Add Case</label>
-                            <input type="text" class="form-control shadow-none text-black fw-semibold py-2" id="addcase" placeholder="Enter Amount">
+                    <form action="">
+                        <div class="row mx-0 py-3 depositForm gap-4 border-bottom border-bottom-1 border-bottom-light">
+                            <div class="col-12">
+                                <label for="addcase" class="form-label labelHeading text-dark fw-bold">Add Case</label>
+                                <input type="text" class="form-control shadow-none text-black fw-semibold py-2" id="addcase" placeholder="Enter Amount">
+                            </div>
+                            <div class="col-12 px-0">
+                                <div class="row mx-0 align-items-center">
+                                    <div class="col-auto fw-bold text-black labelHeading">Quick Add:</div>
+                                    <div class="col-auto px-2"><button type="button" class="bg-white rounded-2 shadow-none addCaseBtn px-2 fw-semibold">+100</button></div>
+                                    <div class="col-auto px-2"><button type="button" class="bg-white rounded-2 shadow-none addCaseBtn px-2 fw-semibold">+300</button></div>
+                                    <div class="col-auto px-2"><button type="button" class="bg-white rounded-2 shadow-none addCaseBtn px-2 fw-semibold">+500</button></div>
+                                </div>
+                            </div>
+                            <div class="col-12">
+                                <input type="text" class="form-control shadow-none text-black fw-semibold py-2" id="promocode" placeholder="Apply Promo Code Here">
+                            </div>
+                            <div class="col-12">
+                                <button type="button" class="btn btnStyle2 w-100 text--center py-2 text-uppercase fw-bold text-white">Add Case</button>
+                            </div>
                         </div>
-                        <div class="col-12 px-0">
-                            <div class="row mx-0">
-                                <div class="col-auto fw-bold text-black labelHeading">Quick Add:</div>
-                                <div class="col-auto"></div>
-                                <div class="col-auto"></div>
-                                <div class="col-auto"></div>
+                        <div class="row mx-0 mt-4">
+                            <div class="col-12">
+                                <div class="card row mx-0 border-0 rounded-2 shadow-none bg-theme1">
+                                    <div class="col"></div>
+                                    <div class="col-auto form-check">
+                                        <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault" hidden>
+                                        <label class="form-check-label" for="flexCheckDefault"> </label>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </form>
