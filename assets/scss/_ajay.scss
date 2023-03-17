@@ -1,4 +1,4 @@
-// ? @@@@@@@@@@@@@@@@@@@@@@[  signin start  ]@@@@@@@@@@@@@@@@@@@@@@
+// ******************  Home start  ] ***************
 [data-page-name=homePage] {
     @include media-breakpoint(basic) {
         & .cricketheader {
@@ -45,11 +45,6 @@
         }
         
         & .tabContents {
-            & .cardslider {
-                & .owl-stage-outer {
-                    padding: 0px;
-                }
-            }
             & .matchesCard {
                 box-shadow: 0px 0px 6px rgba($black, 0.08);
                 & .card-body {
@@ -157,6 +152,7 @@
                         & .matchTimer {
                             & .pichTime {
                                 font-size: 10px;
+                                color: $theme2;
                             }
                         }
                     }
@@ -187,6 +183,48 @@
 
     @include media-breakpoint-down(sm) {}
 }
+
+// ! ***************** [ Home Page End ] ***********************
+
+// ******************* [ Deposit Case Page ] ********************
+[data-page-name=depositCasePage] {
+    @include media-breakpoint(basic) {
+        & .depositForm {
+            & .form-label {
+                font-size: 14px;
+            }
+            & .form-control {
+                font-size: 14px;
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+
+// ! ***************** [ Deposit Page End ] ***********************
+
+
 
 [data-bs-theme=dark] {
     & [data-page-name=signin] {
