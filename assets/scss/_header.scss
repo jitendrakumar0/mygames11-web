@@ -1,5 +1,7 @@
 @include media-breakpoint(basic) {
   .header {
+    background-color: $theme1;
+    height: 60px;
     & .innerheader {
       & .profile {
         & .userImage {
@@ -12,7 +14,7 @@
       }
       & .notification {
         & .notificationIcon {
-          width: 25px;
+          width: 20px;
           & img {
             transition: all 0.3s;
           }
