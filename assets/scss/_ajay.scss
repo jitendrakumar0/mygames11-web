@@ -2,19 +2,162 @@
 [data-page-name=homePage] {
     @include media-breakpoint(basic) {
         & .cricketheader {
+            box-shadow: 0px 0px 6px rgba($black, 0.1) !important;
+            z-index: 1;
             & .navtab {
-                box-shadow: 0px 0px 20px rgba($black, 0.1);
                 & .nav-item {
                     & .nav-link {
-                        font-size: 14px;
+                        font-size: 12px;
                         font-weight: 600;
-                        & .crickerImg {
-                            width: 20px;
+                        transition: all 0.3s;
+                        border-bottom: 2px solid transparent;
+                        & .gameImg {
+                            height: 20px;
+                            & img {
+                                filter: grayscale(1);
+                                transition: all 0.3s;
+                            }
+                        }
+                        & .gamesheading {
+                            line-height: 100%;
                         }
                         &.active{
                             background: transparent;
-                            border-bottom: 2px solid $theme2;
-                            color: darken($theme2,  10) !important;
+                            border-color:  $theme2;
+                            color: $theme2 !important;
+                            & .gameImg {
+                                & img {
+                                    filter: grayscale(0);
+                                }
+                            }
+                        }
+                        &:hover{
+                            color: $theme2 !important;
+                            & .gameImg {
+                                & img {
+                                    filter: grayscale(0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        & .tabContents {
+            & .cardslider {
+                & .owl-stage-outer {
+                    padding: 0px;
+                }
+            }
+            & .matchesCard {
+                box-shadow: 0px 0px 6px rgba($black, 0.08);
+                & .card-body {
+                    & .teamHeadline {
+                        & .matchteams, & .notificationOut {
+                            font-size: 11px;
+                        }
+                        & .notificationOut {
+                            color: lighten($success, 5);
+                        }
+                        & .lineupsImg {
+                            width: 18px;
+                        }
+                    }
+                    & .innerBody {
+                        & .leftSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    left: -50%;
+                                    transform: translate(0%, -50%);
+                                    // background: rgba($warning, 0.3);
+                                }
+                            }
+                        }
+                        & .rightSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    right: -50%;
+                                    transform: translate(0%, -50%);
+                                    // background: rgba($success, 0.3);
+                                    
+                                }
+                            }
+                        }
+                        &.firstMatchBody {
+                            & .leftSideTeams {
+                                & .teamLogo {
+                                    &::before{
+                                        background: rgba($warning, 0.3);
+                                    }
+                                }
+                            }
+                            & .rightSideTeams {
+                                & .teamLogo {
+                                    &::before{
+                                        background: rgba($success, 0.3);
+                                        
+                                    }
+                                }
+                            }
+                        }
+                        &.secondMatchBody {
+                            & .leftSideTeams {
+                                & .teamLogo {
+                                    &::before{
+                                        background: rgba($success, 0.3);
+                                    }
+                                }
+                            }
+                            & .rightSideTeams {
+                                & .teamLogo {
+                                    &::before{
+                                        background: rgba($info, 0.4);
+                                    }
+                                }
+                            }
+                        }
+                        &.threedMatchBody {
+                            & .leftSideTeams {
+                                & .teamLogo {
+                                    &::before{
+                                        background: rgba($info, 0.4);
+                                    }
+                                }
+                            }
+                            & .rightSideTeams {
+                                & .teamLogo {
+                                    &::before{
+                                        background: rgba($warning, 0.3);
+                                    }
+                                }
+                            }
+                        }
+                        & .firstTeamsName {
+                            font-size: 12px;
+                        }
+                        & .team {
+                            & .teamLogo {
+                                width: 40px;
+                                height: 40px;
+                                z-index: 0;
+                                &::before{
+                                    content: "";
+                                    height: 20px;
+                                    width: 100%;
+                                    position: absolute;
+                                    top: 50%;
+                                    z-index: -1;
+                                }
+                            }
+                            & .teamName {
+                                font-size: 10px;
+                            }
+                        }
+                        & .matchTimer {
+                            & .pichTime {
+                                font-size: 10px;
+                            }
                         }
                     }
                 }
