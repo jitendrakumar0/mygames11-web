@@ -1,8 +1,9 @@
 
 .form{
-    & .form-control {
+    & .form-control, & .form-select {
         font-size: 14px;
-        border: 1px solid $gray-500;
+        border: 1px solid $gray-500 !important;
+        height: 40px !important;
         &::placeholder {
             font-size: 14px;
             font-weight: 600;
