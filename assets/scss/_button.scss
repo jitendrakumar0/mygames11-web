@@ -13,6 +13,18 @@
   .customFontBtn{
     font-size: 12px;
   }
+  .addCaseBtn {
+    font-size: 14px;
+    border: 1.6px solid $theme2;
+  }
+  .btnStyle2 {
+    background-color: $theme1;
+    transition: all ease-in-out 0.3s;
+    font-size: 14px;
+    &:hover{
+      background-color: rgba($theme1, 0.9) !important;
+    }
+  }
 }
 
 
