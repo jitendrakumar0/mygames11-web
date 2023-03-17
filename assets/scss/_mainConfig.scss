@@ -41,10 +41,6 @@ $mainOuterWidth: 360px;
     outline: 0 !important;
     display: block !important;
     user-select: none !important;
-    background-image: url(../svg/img/mainBg.jpg);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: top center;
 
     & input,
     & textarea,
@@ -60,7 +56,10 @@ $mainOuterWidth: 360px;
       position: relative !important;
       overflow: hidden !important;
       padding: 0px !important;
-
+      background-image: url(../svg/img/mainBg.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: top center;
       &>.mainInner {
         background-color: $white;
         height: 100% !important;
@@ -74,6 +73,7 @@ $mainOuterWidth: 360px;
         overflow: hidden !important;
         margin: 0px !important;
         flex-wrap: nowrap !important;
+        min-height: 500px;
 
         & [data-scrollbar] {
           height: 100%;
