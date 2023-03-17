@@ -1,7 +1,12 @@
-.registerTxt {
+.footerLink {
     font-size: 14px;
     color: $gray-600;
     font-weight: 700;
+}
+.header {
+    & .title {
+        font-size: 14px;
+    }
 }
 
 // ? @@@@@@@@@@@@@@@@@@@@@@[  login start  ]@@@@@@@@@@@@@@@@@@@@@@
@@ -9,7 +14,7 @@
     @include media-breakpoint(basic) {
         & .mainCenterPart {
             & .topPart{
-                height: 45%;
+                height: 40%;
                 & .imgOuter{
                     width: 160px;
                 }
@@ -91,5 +96,283 @@
     }
 }
 
-// ! @@@@@@@@@@@@@@@@@@@@@@[  login start  ]@@@@@@@@@@@@@@@@@@@@@@
+// ! @@@@@@@@@@@@@@@@@@@@@@[  login end  ]@@@@@@@@@@@@@@@@@@@@@@
 
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  registration start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=registrationPage] {
+    @include media-breakpoint(basic) {
+        & .mainCenterPart {
+            & .topPart{
+                height: 40%;
+                & .imgOuter{
+                    width: 160px;
+                }
+                & .title {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            & .formOuter {
+                border-radius: 26px;
+                margin-top: -112px;
+                & form {
+                    &.form {
+                        & .tagLine{
+                            font-size: 10px;
+                        }
+                        & .dividarTxt {
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=registrationPage] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  registration end  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  otp page start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=otpVerifyPage] {
+    @include media-breakpoint(basic) {
+        & .mainCenterPart {
+            & .topPart{
+                height: 40%;
+                & .imgOuter{
+                    width: 160px;
+                }
+                & .title {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            & .formOuter {
+                border-radius: 26px;
+                margin-top: -112px;
+                & form {
+                    &.form {
+                        & .otp {
+                            display:inline-block;
+                            width:40px;
+                            height:40px;
+                            text-align:center;
+                        }
+                        & .tagLine, & .resendOtp{
+                            font-size: 10px;
+                        }
+                        & .mobileNumber, & .bottomTitle {
+                            font-size: 14px;
+                        }
+                        & .dividarTxt {
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=otpVerifyPage] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  otp page end  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  create profile start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=createProfilePage] {
+    @include media-breakpoint(basic) {
+        & .mainCenterPart {
+            & .topPart{
+                height: 40%;
+                & .imgOuter{
+                    width: 160px;
+                }
+                & .title {
+                    font-size: 16px;
+                    font-weight: 600;
+                }
+            }
+            & .formOuter {
+                border-radius: 26px;
+                margin-top: -112px;
+                & form {
+                    &.form {
+                        & .tagLine{
+                            font-size: 10px;
+                        }
+                        & .dividarTxt {
+                            font-size: 14px;
+                            font-weight: 600;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=createProfilePage] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  create profile end  ]@@@@@@@@@@@@@@@@@@@@@@

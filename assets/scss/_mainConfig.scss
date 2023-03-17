@@ -41,6 +41,10 @@ $mainOuterWidth: 360px;
     outline: 0 !important;
     display: block !important;
     user-select: none !important;
+    background-image: url(../svg/img/mainBg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
 
     & input,
     & textarea,
@@ -58,6 +62,7 @@ $mainOuterWidth: 360px;
       padding: 0px !important;
 
       &>.mainInner {
+        background-color: $white;
         height: 100% !important;
         border: 0 !important;
         position: relative !important;
