@@ -190,11 +190,13 @@
 [data-page-name=depositCasePage] {
     @include media-breakpoint(basic) {
         & .depositForm {
-            & .form-label {
+            & .labelHeading {
                 font-size: 14px;
             }
             & .form-control {
                 font-size: 14px;
+                border: 1.6px solid $theme2;
+                // padding: 0.7rem 0.5rem;
             }
         }
     }

@@ -1,40 +1,42 @@
 @include media-breakpoint(basic) {
-  .bottomBar {
+  .footer {
     height: 60px;
-    box-shadow: 0px 0px 6px rgba($black, 0.1);
-    & .innerBar {
-      & .bottombarTabs {
-        & .linkTab {
-          transition: all 0.3s;
-          filter: grayscale(1);
-          & .gameImg {
-            height: 20px;
-            & img {
-              transition: all 0.3s;
-            }
-          }
-          & .gamesheading {
-            line-height: 100%;
-            font-size: 12px;
-            font-weight: 600;
+    &.bottomBar {
+      box-shadow: 0px 0px 6px rgba($black, 0.1);
+      & .innerBar {
+        & .bottombarTabs {
+          & .linkTab {
             transition: all 0.3s;
-          }
-          &:hover {
-            filter: grayscale(0);
-            & .gamesheading {
-              color: darken($primary,  10) !important;
-            }
-          }
-          &.active {
-            filter: grayscale(0) !important;
+            filter: grayscale(1);
             & .gameImg {
+              height: 20px;
               & img {
-            filter: grayscale(0) !important;
                 transition: all 0.3s;
               }
             }
             & .gamesheading {
-              color: darken($primary,  10) !important;
+              line-height: 100%;
+              font-size: 12px;
+              font-weight: 600;
+              transition: all 0.3s;
+            }
+            &:hover {
+              filter: grayscale(0);
+              & .gamesheading {
+                color: darken($primary, 10) !important;
+              }
+            }
+            &.active {
+              filter: grayscale(0) !important;
+              & .gameImg {
+                & img {
+                  filter: grayscale(0) !important;
+                  transition: all 0.3s;
+                }
+              }
+              & .gamesheading {
+                color: darken($primary, 10) !important;
+              }
             }
           }
         }
