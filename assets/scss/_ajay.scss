@@ -208,8 +208,9 @@
             }
         }
         & .addOffer {
-            background-color: lighten($theme1,  40);
-            & .dipositAmount, & .diposituse {
+            background-color: lighten($theme1, 40);
+            & .dipositAmount,
+            & .diposituse {
                 font-size: 12px;
             }
             & .selecotr-item {
@@ -222,7 +223,7 @@
                     font-size: 12px;
                     transform: none;
                     cursor: pointer;
-                    background-color: lighten($success,  7);
+                    background-color: lighten($success, 7);
                 }
                 // & .selector-item_radio:checked + .selector-item_label {
                 //     color: $white;
@@ -289,7 +290,7 @@
                 }
             }
         }
-        & .tabContents{
+        & .tabContents {
             & .tab-pane {
                 & .topPointHeading {
                     font-size: 12px;
@@ -303,7 +304,7 @@
                                     width: 30px;
                                     height: 30px;
                                 }
-                                &::after{
+                                &::after {
                                     background-image: url(../svg/icons/downArrowAccordion.svg);
                                     background-position: center;
                                     background-size: cover;
@@ -315,7 +316,8 @@
                         }
                         & .accordion-body {
                             background-color: $gray-300;
-                            & .activitiValue , & .activitiHeading{
+                            & .activitiValue,
+                            & .activitiHeading {
                                 font-size: 12px;
                             }
                             & .subheading {
@@ -411,13 +413,9 @@
 
 // ! @@@@@@@@@@@@@@@@@@@@@@[  signin start  ]@@@@@@@@@@@@@@@@@@@@@@
 
-
-
-
-
 // ?################### [ Profile Offcanvas ] #############
 @include media-breakpoint(basic) {
-    .profileOffcanvas{
+    .profileOffcanvas {
         width: 360px !important;
         & .offcanvas-body {
             & .innerbody {
@@ -433,7 +431,7 @@
                         }
                     }
                     transition: all ease-in-out 0.3s;
-                    &:hover{
+                    &:hover {
                         opacity: 0.9;
                     }
                 }
