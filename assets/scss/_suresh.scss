@@ -13,8 +13,11 @@
         .header {
             background-color: $theme1;
             & .title {
-                font-size: 14px;
+                font-size: 12px;
             }
+        }
+        .fs-12 {
+            font-size: 12px !important;
         }
         
         // .select2{
@@ -841,6 +844,11 @@
                     }
                 }
             }
+            & .winStatus {
+                font-size: 12px;
+                border-radius: 0 0 6px 6px;
+                background-color: darken($info, 20);
+            }
             & .emptyState {
                 & .emptyStateOuter{
                     & .txt {
@@ -911,3 +919,579 @@
 }
 
 // ! @@@@@@@@@@@@@@@@@@@@@@[  my matches end  ]@@@@@@@@@@@@@@@@@@@@@@
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  joined contest detail start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=joinedContestDetailPage] {
+    @include media-breakpoint(basic) {
+        & .cricketheader {
+            box-shadow: 0px 0px 6px rgba($black, 0.1) !important;
+            z-index: 1;
+            border-radius: 0 0 10px 10px !important;
+        }
+        & .matchesCard {
+            box-shadow: 0px 0px 6px rgba($black, 0.08);
+            & .card-body {
+                & .teamHeadline {
+                    & .matchteams, & .notificationOut {
+                        font-size: 11px;
+                    }
+                    & .notificationOut {
+                        color: lighten($info, 10);
+                    }
+                    & .lineupsImg {
+                        width: 18px;
+                    }
+                }
+                & .innerBody {
+                    & .leftSideTeams {
+                        & .teamLogo {
+                            &::before{
+                                left: -50%;
+                                transform: translate(0%, -50%);
+                                // background: rgba($warning, 0.3);
+                            }
+                        }
+                    }
+                    & .rightSideTeams {
+                        & .teamLogo {
+                            &::before{
+                                right: -50%;
+                                transform: translate(0%, -50%);
+                                // background: rgba($success, 0.3);
+                                
+                            }
+                        }
+                    }
+                    & .numberOffContest{
+                        font-size: 10px;
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                        background-color: lighten($theme2, 48);
+                    }
+                    &.firstMatchBody {
+                        & .leftSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($warning, 0.3);
+                                }
+                            }
+                        }
+                        & .rightSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($success, 0.3);
+                                    
+                                }
+                            }
+                        }
+                    }
+                    &.secondMatchBody {
+                        & .leftSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($success, 0.3);
+                                }
+                            }
+                        }
+                        & .rightSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($info, 0.4);
+                                }
+                            }
+                        }
+                    }
+                    &.threedMatchBody {
+                        & .leftSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($info, 0.4);
+                                }
+                            }
+                        }
+                        & .rightSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($warning, 0.3);
+                                }
+                            }
+                        }
+                    }
+                    & .firstTeamsName {
+                        font-size: 12px;
+                    }
+                    & .team {
+                        & .teamLogo {
+                            width: 40px;
+                            height: 40px;
+                            z-index: 0;
+                            &::before{
+                                content: "";
+                                height: 20px;
+                                width: 100%;
+                                position: absolute;
+                                top: 50%;
+                                z-index: -1;
+                            }
+                        }
+                        & .teamName {
+                            font-size: 10px;
+                        }
+                    }
+                    & .matchTimer {
+                        & .pichTime {
+                            font-size: 10px;
+                            color: $theme2;
+                        }
+                    }
+                    & .imgOuter {
+                        width: 20px;
+                    }
+                    & .progress{
+                        height: 6px;
+                        & .progress-bar {
+                            border-radius: 0 50px 50px 0;
+                        }
+                    }
+                    & .badges {
+                        top: 0;
+                        bottom: 0;
+                        left: 8px;
+                        margin: auto;
+                        & .badge {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        & .winStatus {
+            font-size: 12px;
+            border-radius: 0 0 6px 6px;
+            background-color: darken($info, 20);
+        }
+        & .emptyState {
+            & .emptyStateOuter{
+                & .txt {
+                    font-size: 12px;
+                }
+            }
+            & .imgOuter{
+                width: 120px;
+                margin: auto;
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=joinedContestDetailPage] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  joined contest detail end  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  my matches leaderboard start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=myMatchesLeaderBoardPage] {
+    @include media-breakpoint(basic) {
+        & .cricketheader {
+            border-radius: 0 0 10px 10px !important;
+            z-index: 1;
+            & .navtab {
+                & .nav-item {
+                    & .nav-link {
+                        font-size: 12px;
+                        font-weight: 600;
+                        transition: all 0.3s;
+                        border-bottom: 2px solid transparent;
+                        & .gamesheading {
+                            line-height: 100%;
+                        }
+                        &.active{
+                            background: transparent;
+                            border-color:  $theme2;
+                            color: $theme2 !important;
+                        }
+                    }
+                }
+            }
+        }
+        & .matchesCard {
+            box-shadow: 0px 0px 6px rgba($black, 0.08);
+            & .card-body {
+                & .teamHeadline {
+                    & .matchteams, & .notificationOut {
+                        font-size: 11px;
+                    }
+                    & .notificationOut {
+                        color: lighten($info, 10);
+                    }
+                    & .lineupsImg {
+                        width: 18px;
+                    }
+                }
+                & .innerBody {
+                    & .leftSideTeams {
+                        & .teamLogo {
+                            &::before{
+                                left: -50%;
+                                transform: translate(0%, -50%);
+                                // background: rgba($warning, 0.3);
+                            }
+                        }
+                    }
+                    & .rightSideTeams {
+                        & .teamLogo {
+                            &::before{
+                                right: -50%;
+                                transform: translate(0%, -50%);
+                                // background: rgba($success, 0.3);
+                                
+                            }
+                        }
+                    }
+                    & .numberOffContest{
+                        font-size: 10px;
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                        background-color: lighten($theme2, 48);
+                    }
+                    &.firstMatchBody {
+                        & .leftSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($warning, 0.3);
+                                }
+                            }
+                        }
+                        & .rightSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($success, 0.3);
+                                    
+                                }
+                            }
+                        }
+                    }
+                    &.secondMatchBody {
+                        & .leftSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($success, 0.3);
+                                }
+                            }
+                        }
+                        & .rightSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($info, 0.4);
+                                }
+                            }
+                        }
+                    }
+                    &.threedMatchBody {
+                        & .leftSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($info, 0.4);
+                                }
+                            }
+                        }
+                        & .rightSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($warning, 0.3);
+                                }
+                            }
+                        }
+                    }
+                    & .firstTeamsName {
+                        font-size: 12px;
+                    }
+                    & .team {
+                        & .teamLogo {
+                            width: 40px;
+                            height: 40px;
+                            z-index: 0;
+                            &::before{
+                                content: "";
+                                height: 20px;
+                                width: 100%;
+                                position: absolute;
+                                top: 50%;
+                                z-index: -1;
+                            }
+                        }
+                        & .teamName {
+                            font-size: 10px;
+                        }
+                    }
+                    & .matchTimer {
+                        & .pichTime {
+                            font-size: 10px;
+                            color: $theme2;
+                        }
+                    }
+                    & .imgOuter {
+                        width: 20px;
+                    }
+                    & .progress{
+                        height: 6px;
+                        & .progress-bar {
+                            border-radius: 0 50px 50px 0;
+                        }
+                    }
+                    & .badges {
+                        top: 0;
+                        bottom: 0;
+                        left: 8px;
+                        margin: auto;
+                        & .badge {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        & .winStatus {
+            font-size: 12px;
+            border-radius: 0 0 6px 6px;
+            background-color: darken($info, 20);
+        }
+        & table {
+            &.table {
+                & thead {
+                    & tr {
+                        & th {
+                            font-weight: normal;
+                            & .icon {
+                                width: 16px;
+                                height: 16px;
+                                & img {
+                                    filter: invert(1);
+                                }
+                            }
+                        }
+                    }
+                }
+                & tbody {
+                    vertical-align: baseline;
+                    & tr {
+                        & td {
+                            border: none;
+                        }
+                    }
+                }
+            }
+        }
+        & .teamDetail {
+            & .imgOuter {
+                width: 32px;
+                height: 32px;
+                & img {
+                    object-fit: cover;
+                    object-position: center top;
+                }
+            }
+        }
+        & .winningAmount {
+            font-size: 14px;
+        }
+        & .myRank {
+            font-size: 14px;
+            & .icon {
+                width: 16px;
+                height: 16px;
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=myMatchesLeaderBoardPage] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  my matches leaderboard end  ]@@@@@@@@@@@@@@@@@@@@@@
+
+// .modal {
+//     &.teamView{
+//         & .modal-dialog {
+//             & .modal-content {
+//                 & .modal-header{
+                    
+//                 }
+//                 & .modal-body {
+                    
+//                 }
+//             }
+//         }
+//     }
+// }
+
+.btn-close {
+    filter: invert(1);
+    opacity: 1;
+}
+.brand{
+    width: 100px;
+}
+.buttons {
+    & .btn-edit {
+        width: 16px;
+        height: 16px;
+    }
+}
+.bgImg {
+    background-image: url(../svg/img/teamBg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    & .plyerOuter{
+        & .img{
+            width: 40px;
+            height: 40px;
+            & img {
+            }
+        }
+        & .player {
+            & .name {
+                font-size: 10px;
+                padding: 2px 6px;
+            }
+        }
+        &.caption{
+            &:before {
+                content: 'C';
+                width: 18px;
+                height: 18px;
+                border-radius: 50px;
+                background-color: $dark;
+                color: $white;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                font-size: 10px;
+                position: absolute;
+            }
+        }
+        &.vCaption{
+            &:before {
+                content: 'VC';
+                width: 18px;
+                height: 18px;
+                border-radius: 50px;
+                background-color: $white;
+                color: $dark;
+                align-items: center;
+                display: flex;
+                justify-content: center;
+                font-size: 10px;
+                position: absolute;
+            }
+        }
+    }
+}

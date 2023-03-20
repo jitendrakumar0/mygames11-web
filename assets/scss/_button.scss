@@ -25,6 +25,12 @@
       background-color: rgba($theme1, 0.9) !important;
     }
   }
+  .btnSuccess {
+    background-color: lighten($success, 10);
+    border-radius: 10px;
+    padding: 4px 16px;
+    font-size: 14px;
+  }
 }
 
 
