@@ -30,6 +30,19 @@
 
       }
     }
+    .btn-close {
+      filter: invert(1);
+      opacity: 1;
+    }
+    .brand{
+        width: 100px;
+    }
+    .buttons {
+        & .btn-edit {
+            width: 16px;
+            height: 16px;
+        }
+    }
   }
 }
 

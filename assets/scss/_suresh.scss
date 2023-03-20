@@ -19,6 +19,9 @@
         .fs-12 {
             font-size: 12px !important;
         }
+        .fs-10 {
+            font-size: 10px !important;
+        }
         
         // .select2{
         //     &.select2-container {
@@ -1685,83 +1688,482 @@
 
 // ! @@@@@@@@@@@@@@@@@@@@@@[  my matches leaderboard end  ]@@@@@@@@@@@@@@@@@@@@@@
 
-// .modal {
-//     &.teamView{
-//         & .modal-dialog {
-//             & .modal-content {
-//                 & .modal-header{
-                    
-//                 }
-//                 & .modal-body {
-                    
-//                 }
-//             }
-//         }
-//     }
-// }
+// ? @@@@@@@@@@@@@@@@@@@@@@[  team view start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=teamViewPage] {
+    @include media-breakpoint(basic) {
+        .bgImg {
+            background-image: url(../svg/img/teamBg.png);
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            width: 100%;
+            height: 100%;
+            & .plyerOuter{
+                & .img{
+                    width: 40px;
+                    height: 40px;
+                    & img {
+                    }
+                }
+                & .player {
+                    & .name {
+                        font-size: 10px;
+                        padding: 2px 6px;
+                    }
+                }
+                &.caption{
+                    &:before {
+                        content: 'C';
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50px;
+                        background-color: $dark;
+                        color: $white;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        font-size: 10px;
+                        position: absolute;
+                    }
+                }
+                &.vCaption{
+                    &:before {
+                        content: 'VC';
+                        width: 18px;
+                        height: 18px;
+                        border-radius: 50px;
+                        background-color: $white;
+                        color: $dark;
+                        align-items: center;
+                        display: flex;
+                        justify-content: center;
+                        font-size: 10px;
+                        position: absolute;
+                    }
+                }
+            }
+        }
+    }
 
-.btn-close {
-    filter: invert(1);
-    opacity: 1;
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
 }
-.brand{
-    width: 100px;
-}
-.buttons {
-    & .btn-edit {
-        width: 16px;
-        height: 16px;
-    }
-}
-.bgImg {
-    background-image: url(../svg/img/teamBg.png);
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    width: 100%;
-    height: 100%;
-    & .plyerOuter{
-        & .img{
-            width: 40px;
-            height: 40px;
-            & img {
-            }
+
+[data-bs-theme=dark] {
+    & [data-page-name=teamViewPage] {
+        @include dark-media-breakpoint(basic) {
+            
         }
-        & .player {
-            & .name {
-                font-size: 10px;
-                padding: 2px 6px;
-            }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
         }
-        &.caption{
-            &:before {
-                content: 'C';
-                width: 18px;
-                height: 18px;
-                border-radius: 50px;
-                background-color: $dark;
-                color: $white;
-                align-items: center;
-                display: flex;
-                justify-content: center;
-                font-size: 10px;
-                position: absolute;
-            }
+        @include dark-media-breakpoint-up(md) {
         }
-        &.vCaption{
-            &:before {
-                content: 'VC';
-                width: 18px;
-                height: 18px;
-                border-radius: 50px;
-                background-color: $white;
-                color: $dark;
-                align-items: center;
-                display: flex;
-                justify-content: center;
-                font-size: 10px;
-                position: absolute;
-            }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
         }
     }
 }
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  team view end  ]@@@@@@@@@@@@@@@@@@@@@@
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  choose team start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=chooseYourTeam] {
+    @include media-breakpoint(basic) {
+        & .chooseYourTeamMain {
+            & .card {
+                border-color: darken($info, 15) !important;
+                &.teams {
+                    & .card-header {
+                        & .buttons{
+                            & .viewTeam {
+                                width: 16px;
+                                height: 16px;
+                                & img {
+                                }
+                            }
+                            & .form-check{
+                                & .form-check-input {
+                                    cursor: pointer;
+                                    width: 18px;
+                                    height: 18px;
+                                    background-image: none;
+                                    position: relative;
+                                    &:before {
+                                        content: '';
+                                        display: block;
+                                        width: 5px;
+                                        height: 10px;
+                                        position: absolute;
+                                        border-bottom: 2px solid $white;
+                                        border-right: 2px solid $white;
+                                        opacity: 0;
+                                        transition: ease-in-out .3s;
+                                        right: 5px;
+                                        top: 2px;
+                                    }
+                                    &:checked {
+                                        &:before {
+                                            opacity: 1;
+                                            transform: rotate(45deg);
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & .card-body{
+                        & .caption{
+                            background-color: darken($info, 15);
+                            border-radius: 0 4px 4px 0;
+                            padding: 2px 8px;
+                            width: 34px;
+                            &.vCaption {
+                                border-radius: 4px 0 0 4px;
+                            }
+                        }
+                        & .imgOuter {
+                            width: 46px;
+                            height: 46px;
+                        }
+                        & .teamDivide{
+                            border-color: darken($info, 15) !important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=chooseYourTeam] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  choose team end  ]@@@@@@@@@@@@@@@@@@@@@@
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  live contest detail start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=liveContestDetailPage] {
+    @include media-breakpoint(basic) {
+        & .cricketheader {
+            box-shadow: 0px 0px 6px rgba($black, 0.1) !important;
+            z-index: 1;
+            border-radius: 0;
+            & .navtab {
+                & .nav-item {
+                    & .nav-link {
+                        font-size: 12px;
+                        font-weight: 600;
+                        transition: all 0.3s;
+                        & .gamesheading {
+                            line-height: 100%;
+                        }
+                        &.active{
+                            background: transparent;
+                            border-color:  $theme2;
+                            color: $theme2 !important;
+                        }
+                        &:hover{
+                            color: $theme2 !important;
+                        }
+                    }
+                }
+            }
+        }
+        & .matchesCard {
+            box-shadow: 0px 0px 6px rgba($black, 0.08);
+            & .card-body {
+                & .teamHeadline {
+                    & .matchteams, & .notificationOut {
+                        font-size: 11px;
+                    }
+                    & .notificationOut {
+                        color: lighten($info, 10);
+                    }
+                    & .lineupsImg {
+                        width: 18px;
+                    }
+                }
+                & .innerBody {
+                    & .leftSideTeams {
+                        & .teamLogo {
+                            &::before{
+                                left: -50%;
+                                transform: translate(0%, -50%);
+                                // background: rgba($warning, 0.3);
+                            }
+                        }
+                    }
+                    & .rightSideTeams {
+                        & .teamLogo {
+                            &::before{
+                                right: -50%;
+                                transform: translate(0%, -50%);
+                                // background: rgba($success, 0.3);
+                                
+                            }
+                        }
+                    }
+                    & .numberOffContest{
+                        font-size: 10px;
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                        background-color: lighten($theme2, 48);
+                    }
+                    &.firstMatchBody {
+                        & .leftSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($warning, 0.3);
+                                }
+                            }
+                        }
+                        & .rightSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($success, 0.3);
+                                    
+                                }
+                            }
+                        }
+                    }
+                    &.secondMatchBody {
+                        & .leftSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($success, 0.3);
+                                }
+                            }
+                        }
+                        & .rightSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($info, 0.4);
+                                }
+                            }
+                        }
+                    }
+                    &.threedMatchBody {
+                        & .leftSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($info, 0.4);
+                                }
+                            }
+                        }
+                        & .rightSideTeams {
+                            & .teamLogo {
+                                &::before{
+                                    background: rgba($warning, 0.3);
+                                }
+                            }
+                        }
+                    }
+                    & .firstTeamsName {
+                        font-size: 12px;
+                    }
+                    & .team {
+                        & .teamLogo {
+                            width: 40px;
+                            height: 40px;
+                            z-index: 0;
+                            &::before{
+                                content: "";
+                                height: 20px;
+                                width: 100%;
+                                position: absolute;
+                                top: 50%;
+                                z-index: -1;
+                            }
+                        }
+                        & .teamName {
+                            font-size: 10px;
+                        }
+                    }
+                    & .matchTimer {
+                        & .pichTime {
+                            font-size: 10px;
+                            color: $theme2;
+                        }
+                    }
+                    & .imgOuter {
+                        width: 20px;
+                    }
+                    & .progress{
+                        height: 6px;
+                        & .progress-bar {
+                            border-radius: 0 50px 50px 0;
+                        }
+                    }
+                    & .badges {
+                        top: 0;
+                        bottom: 0;
+                        left: 8px;
+                        margin: auto;
+                        & .badge {
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+        & .winStatus {
+            font-size: 12px;
+            border-radius: 0 0 6px 6px;
+            background-color: darken($info, 20);
+        }
+        & .emptyState {
+            & .emptyStateOuter{
+                & .txt {
+                    font-size: 12px;
+                }
+            }
+            & .imgOuter{
+                width: 120px;
+                margin: auto;
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=liveContestDetailPage] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  live contest detail end  ]@@@@@@@@@@@@@@@@@@@@@@
