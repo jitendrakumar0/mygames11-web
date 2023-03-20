@@ -7,6 +7,7 @@
         & .userImage {
           width: 40px;
           height: 40px;
+          cursor: pointer;
           & img {
             object-fit: cover;
           }
@@ -42,6 +43,41 @@
             width: 16px;
             height: 16px;
         }
+      & .userprofilename {
+        & .userMailAdd, & .username {
+          font-size: 12px;
+        }
+      }
+    }
+    &.profileoffcanvasHeader {
+      height: 114px;
+      & .innerheader{
+        & .profile {
+          & .userImage {
+            width: 50px;
+            height: 50px;
+          }
+        }
+      }
+      & .upload {
+        right: -10%;
+          top: 50%;
+          width: 25px;
+          height: 25px;
+        & label {
+          cursor: pointer;
+          overflow: hidden;
+          transition: all ease 0.5s;
+          pointer-events: none;
+          & img {
+            filter: invert(1);
+          }
+        }
+        & .input-file {
+          opacity: 0;
+          cursor: pointer;
+        }
+      }
     }
   }
 }
