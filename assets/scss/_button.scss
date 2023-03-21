@@ -31,6 +31,12 @@
     padding: 4px 16px;
     font-size: 14px;
   }
+  .btnIcon {
+    width: 40px;
+  }
+  .btnWarning {
+    background-color: darken($warning, 10);
+  }
 }
 
 
