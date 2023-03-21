@@ -36,6 +36,14 @@
   }
   .btnWarning {
     background-color: darken($warning, 10);
+  .updateBtn {
+    font-size: 14px;
+    color: $theme1;
+    transition: all 0.3s ease-in-out;
+    &:hover{
+      background-color: darken($white, 10);
+      color: darken($theme1, 10);
+    }
   }
 }
 
