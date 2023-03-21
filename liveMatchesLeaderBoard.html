@@ -66,7 +66,7 @@
         <meta property="og:image:height" content="512">
 
         <!--  Title -->
-        <title>My Games 11 | Live Contest Detail</title>
+        <title>My Games 11 | Live Contest LeaderBoard</title>
         <!-- Required meta tags -->
         <meta name="title" content="My Games11" />
         <meta name="description" content="description will be here" />
@@ -112,7 +112,7 @@
                 <navbar class="col-12 header d-flex align-items-center px-0">
                     <div class="row mx-0 innerheader align-items-center w-100">
                         <div class="col-auto notification">
-                            <a href="myMatches.html" type="button" class="notificationIcon shadow-none bg-transparent p-0 border-0"><img src="assets/svg/icons/leftCricleArrow.png" class="w-100" alt="bell"></a>
+                            <a href="javascript:;" type="button" class="notificationIcon shadow-none bg-transparent p-0 border-0"><img src="assets/svg/icons/leftCricleArrow.png" class="w-100" alt="bell"></a>
                         </div>
                         <div class="col">
                             <!-- <div class="title text-white text-center">CYS vs AF</div>
@@ -123,7 +123,7 @@
                         </div>
                     </div>
                 </navbar>
-                <div class="col-12 px-0 flex-fill" data-page-name="liveContestDetailPage" data-scrollbar>
+                <div class="col-12 px-0 flex-fill" data-page-name="liveMatchesLeaderBoardPage" data-scrollbar>
                     <div class="row mx-0 h-100 flex-column flex-nowrap">
                         <div class="col-12 px-0 cricketheader bg-white z-2">
                             <div class="card border-0 matchesCard overflow-hidden border border-1 border-light bg-white rounded-0">
@@ -165,18 +165,18 @@
                                             <div class="col-12 px-0 cricketheader bg-white z-1">
                                                 <ul class="nav row mx-0 nav-pills navtab " id="pills-tab" role="tablist">
                                                     <li class="nav-item col px-0" role="presentation">
-                                                        <button class="nav-link py-3 rounded-0 text-black w-100 border-0 active" id="myContests-tab" data-bs-toggle="pill" data-bs-target="#myContests" type="button" role="tab" aria-controls="myContests" aria-selected="true">
-                                                            <span class="gamesheading pt1 d-flex justify-content-center">My Contests(1)</span>
+                                                        <button class="nav-link py-3 rounded-0 text-black w-100 border-0" id="prizeBreakup-tab" data-bs-toggle="pill" data-bs-target="#prizeBreakup" type="button" role="tab" aria-controls="prizeBreakup" aria-selected="true">
+                                                            <span class="gamesheading pt1 d-flex justify-content-center">Prize Breakup</span>
                                                         </button>
                                                     </li>
                                                     <li class="nav-item col px-0" role="presentation">
-                                                        <button class="nav-link py-3 rounded-0 text-black w-100 border-0" id="myTeams-tab" data-bs-toggle="pill" data-bs-target="#myTeams" type="button" role="tab" aria-controls="myTeams" aria-selected="false">
-                                                            <span class="gamesheading pt1 d-flex justify-content-center">My Teams(1)</span>
+                                                        <button class="nav-link py-3 rounded-0 text-black w-100 border-0 active" id="myRank-tab" data-bs-toggle="pill" data-bs-target="#myRank" type="button" role="tab" aria-controls="myRank" aria-selected="false">
+                                                            <span class="gamesheading pt1 d-flex justify-content-center">My Rank</span>
                                                         </button>
                                                     </li>
                                                     <li class="nav-item col px-0" role="presentation">
                                                         <button class="nav-link py-3 rounded-0 text-black w-100 border-0" id="playerStatus-tab" data-bs-toggle="pill" data-bs-target="#playerStatus" type="button" role="tab" aria-controls="playerStatus" aria-selected="false">
-                                                            <span class="gamesheading pt1 d-flex justify-content-center">Player Status</span>
+                                                            <span class="gamesheading pt1 d-flex justify-content-center">Player Stats</span>
                                                         </button>
                                                     </li>
                                                 </ul>
@@ -187,172 +187,95 @@
                             </div>
                         </div>
                         <div class="col-12 flex-fill h-100 overflow-y-auto">
-                            <div class="row py-3">
+                            <div class="row">
                                 <div class="col-12">
                                     <div class="tab-content tabContents h-100" id="pills-tabContent">
-                                        <div class="tab-pane fade h-100 show active" id="myContests" role="tabpanel" aria-labelledby="myContests-tab" tabindex="0">
-                                            <div class="row h-100">
-                                                <div class="col-12 upcomingMatches">
-                                                    <div class="row gap-3">
-                                                        <div class="col-12">
-                                                            <div class="card matchesCard position-relative overflow-hidden border border-1 borderlight bg-white">
-                                                                <div class="card-body p-0">
-                                                                    <div class="teamHeadline row mx-0 border-bottom border-bottom-1 border-bottom-light py-1 align-items-center">
-                                                                        <div class="col-3 fw-semibold matchteams text-muted text-start">Point: 0</div>
-                                                                        <div class="col fw-semibold matchteams text-muted text-center">Rank: 1</div>
-                                                                        <div class="col-3 fw-semibold matchteams text-muted text-end">Winners: 1</div>
-                                                                    </div>
-                                                                    <div class="innerBody firstMatchBody pt-2">
-                                                                        <div class="row mx-0 align-items-center">
-                                                                            <div class="col-3 leftSideTeams">
-                                                                                <div class="team">
-                                                                                    <div class="teamName text-black">Prize Pool</div>
-                                                                                    <div class="teamName text-dark fw-bold">₹ 0</div>
-                                                                                </div>
-                                                                                <a class="stretched-link" href="liveMatchesLeaderBoard.html"></a>
-                                                                            </div>
-                                                                            <div class="col matchTimer">
-                                                                                <div class="pichTime text-center text-black">Spota</div>
-                                                                                <div class="pichTime text-center fw-bold text-dark">5000</div>
-                                                                            </div>
-                                                                            <div class="col-3 rightSideTeams">
-                                                                                <div class="team text-end">
-                                                                                    <div class="teamName text-black">Entry</div>
-                                                                                    <div class="teamName text-dark fw-bold">₹ 0</div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-12 text-black px-0">
-                                                                                <div class="progress rounded-0 bg-light">
-                                                                                    <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 0.10%" aria-valuenow="0.10" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                                </div>
-                                                                                <div class="d-flex align-items-center justify-content-between px-2 p-1">
-                                                                                    <div class="fs-12 text-theme2">4999 teams left</div>
-                                                                                    <div class="fs-12">5000 Teams</div>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
+                                        <div class="tab-pane fade h-100" id="prizeBreakup" role="tabpanel" aria-labelledby="prizeBreakup-tab" tabindex="0">
+                                            <div class="row h-100 gap-2">
+                                                <div class="col-12 px-0 border-bottom border-1 border-dark">
+                                                    <table class="table border-0 m-0">
+                                                        <thead class="bg-secondary bg-opacity-75 text-white fs-12">
+                                                          <tr>
+                                                            <th scope="col" class="text-start">RANK</th>
+                                                            <th scope="col" class="text-end">Prize</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr class="">
+                                                            <td>
+                                                                <div class="teamDetail text-start">
+                                                                    <div class="teamName text-black fs-12">Rank: 1</div>
                                                                 </div>
-                                                            </div>
-                                                            <div class="otherPart mx-4 bg-white shadow p-1 px-2 border d-flex justify-content-between">
-                                                                <div class="fs-12">Winning: 0.00</div>
-                                                                <div class="badges fs-12 text-white align-items-center d-flex gap-1">
-                                                                    <span class="badge badge1 bg-theme2 rounded-2 align-items-center d-flex justify-content-center">C</span>
-                                                                    <span class="badge badge1 bg-success rounded-2 align-items-center d-flex justify-content-center">S</span>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <!-- <div class="col-12">
-                                                            <div class="card matchesCard position-relative overflow-hidden border border-1 border-light bg-white">
-                                                                <div class="card-body p-0">
-                                                                    <div class="teamHeadline row mx-0 border-bottom border-bottom-1 border-bottom-light py-1 align-items-center">
-                                                                        <div class="col fw-semibold matchteams text-muted px-2">European Cricket League  T10</div>
-                                                                    </div>
-                                                                    <div class="innerBody firstMatchBody pt-2">
-                                                                        <div class="row mx-0 align-items-center">
-                                                                            <div class="col-auto leftSideTeams px-2">
-                                                                                <div class="firstTeamsName text-black fw-bold">CIYMS</div>
-                                                                                <div class="team d-flex align-items-center mt-2">
-                                                                                    <div class="teamLogo position-relative rounded-circle border border-1 border-black d-flex justify-content-center align-items-center"><img src="assets/svg/img/team1.png" class="w-100" alt=""></div>
-                                                                                    <div class="teamName text-uppercase text-black fw-bold ms-2">CYS</div>
-                                                                                </div>
-                                                                                <a class="stretched-link" href="joinedContestDetail.html"></a>
-                                                                            </div>
-                                                                            <div class="col px-0 matchTimer">
-                                                                                <div class="pichTime text-center fw-semibold ">00h:50m:03s</div>
-                                                                            </div>
-                                                                            <div class="col-auto rightSideTeams px-2">
-                                                                                <div class="firstTeamsName text-black text-end fw-bold">Ariana AKIF</div>
-                                                                                <div class="team d-flex align-items-center mt-2">
-                                                                                    <div class="teamName text-uppercase text-black fw-bold me-2">CYS</div>
-                                                                                    <div class="teamLogo position-relative rounded-circle border border-1 border-black d-flex justify-content-center align-items-center"><img src="assets/svg/img/team2.png" class="w-100" alt=""></div>
-                                                                                </div>
-                                                                            </div>
-                                                                            <div class="col-12 numberOffContest mt-3 text-black">1 Contest Joined</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div> -->
-                                                    </div>
+                                                            </td>
+                                                            <td class="text-end">
+                                                                <div class="winningAmount fs-12">₹ 0</div>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
                                                 </div>
-                                                <div class="col-12 emptyState h-100 align-items-center d-flex justify-content-center d-none">
-                                                    <div class="emptyStateOuter p-4 text-center">
-                                                        <div class="row gap-2">
-                                                            <div class="col-12">
-                                                                <div class="txt">You haven't joined any upcoming contests</div>
-                                                                <div class="imgOuter my-2">
-                                                                    <img class="w-100" src="assets/svg/img/emptyStateImg1.png" alt="">
-                                                                </div>
-                                                                <div class="txt">Join contests for any of the upcoming matches</div>
-                                                            </div>
-                                                            <div class="col-12">
-                                                                <a href="home.html" class="btn customFontBtn btn-success text-uppercase w-100 text-white">View Upcoming Matches</a>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                <div class="col-12 px-1">
+                                                    <div class="dec fs-12 text-center">Note: The actual price money may be different than the prize money mentioned above if there is a tie for any of the winning position. Check FAQs for futher deatils. As per govrenment regulations, a tax of 31.2% will be deducted if an individual wins more than ₹ 10,000.</div>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade h-100" id="myTeams" role="tabpanel" aria-labelledby="myTeams-tab" tabindex="0">
-                                            <div class="row chooseYourTeamMain">
-                                                <div class="col-12">
-                                                    <div class="card teams rounded-4 border border-opacity-100  bg-white overflow-hidden">
-                                                        <div class="card-header py-1 bg-white border-bottom">
-                                                            <div class="row align-items-center mx-0">
-                                                                <div class="col px-0">
-                                                                    <div class="fs-12">John (1)</div>
+                                        <div class="tab-pane fade h-100 show active" id="myRank" role="tabpanel" aria-labelledby="myRank-tab" tabindex="0">
+                                            <div class="row h-100">
+                                                <div class="col-12 px-0">
+                                                    <table class="table border-0 mb-0">
+                                                        <thead class="bg-secondary bg-opacity-75 text-white fs-12">
+                                                          <tr>
+                                                            <th scope="col" class="d-flex gap-2">Team Name <div class="icon"><img class="w-100" src="assets/svg/icons/downloadicon.png" alt=""></div></th>
+                                                            <th scope="col" class="text-center">Winning</th>
+                                                            <th scope="col" class="text-center">Rank</th>
+                                                          </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                          <tr class="position-relative bg-success bg-opacity-25">
+                                                            <td>
+                                                                <div class="teamDetail d-flex align-items-center gap-2">
+                                                                    <div class="imgOuter rounded-circle overflow-hidden">
+                                                                        <img class="w-100 h-100" src="assets/svg/img/avtar.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="teamName text-black fs-10">My Team (1) <br>
+                                                                        <span class="">Points: 350</span>
+                                                                    </div>
+                                                                    <a href="teamView.html" class="stretched-link"></a>
                                                                 </div>
-                                                                <div class="col-auto px-0">
-                                                                    <div class="fs-12">Points: 350</div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <div class="winningAmount">-</div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <div class="myRank fs-12">
+                                                                    #1
                                                                 </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="card-body px-0 pb-0">
-                                                            <div class="row align-items-center">
-                                                                <div class="col-auto d-flex align-items-center">
-                                                                    <div class="caption text-center text-white fs-12">C</div>
-                                                                    <div class="imgOuter">
-                                                                        <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
+                                                            </td>
+                                                          </tr>
+                                                          <tr class="position-relative">
+                                                            <td>
+                                                                <div class="teamDetail d-flex align-items-center gap-2">
+                                                                    <div class="imgOuter rounded-circle overflow-hidden">
+                                                                        <img class="w-100 h-100" src="assets/svg/img/avtar.jpg" alt="">
+                                                                    </div>
+                                                                    <div class="teamName text-black fs-12">Ajay Saini (1) <br>
+                                                                        <span class="">Points: 350</span>
                                                                     </div>
                                                                 </div>
-                                                                <div class="col text-center">
-                                                                    <div class="fs-10">MUM-W: 7</div>
-                                                                    <div class="fs-10">DEL-W: 4</div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <div class="winningAmount">-</div>
+                                                            </td>
+                                                            <td class="text-center">
+                                                                <div class="myRank">-
+                                                                    <!-- <div class="icon mx-auto">
+                                                                        <button class="btn p-0 border-0 bg-transparent"><img class="w-100" src="assets/svg/icons/exchange.png" alt=""></button>
+                                                                    </div> -->
                                                                 </div>
-                                                                <div class="col-auto d-flex align-items-center">
-                                                                    <div class="caption vCaption text-center text-white fs-12 order-2">VC</div>
-                                                                    <div class="imgOuter order-1">
-                                                                        <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12 bg-secondary p-1 d-flex justify-content-between text-white">
-                                                                    <div class="captionName fs-12 px-4">John Doe</div>
-                                                                    <div class="captionName fs-12 px-4">John Doe2</div>
-                                                                </div>
-                                                                <div class="col-12 py-2">
-                                                                    <div class="row mx-0">
-                                                                        <div class="col px-0 teamDivide text-center">
-                                                                            <div class="fs-10">Wicket Keeper</div>
-                                                                            <div class="fs-10">1</div>
-                                                                        </div>
-                                                                        <div class="col px-0 teamDivide border-start text-center">
-                                                                            <div class="fs-10">Batsman</div>
-                                                                            <div class="fs-10">5</div>
-                                                                        </div>
-                                                                        <div class="col px-0 teamDivide border-start text-center">
-                                                                            <div class="fs-10">All Rounder</div>
-                                                                            <div class="fs-10">2</div>
-                                                                        </div>
-                                                                        <div class="col px-0 teamDivide border-start text-center">
-                                                                            <div class="fs-10">Bowler</div>
-                                                                            <div class="fs-10">3</div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
+                                                            </td>
+                                                          </tr>
+                                                        </tbody>
+                                                      </table>
                                                 </div>
                                             </div>
                                         </div>
