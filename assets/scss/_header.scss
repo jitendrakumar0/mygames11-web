@@ -26,6 +26,23 @@
           }
         }
       }
+      & .matchTime{
+        font-size: 10px;
+
+      }
+    }
+    .btn-close {
+      filter: invert(1);
+      opacity: 1;
+    }
+    .brand{
+        width: 100px;
+    }
+    .buttons {
+        & .btn-edit {
+            width: 16px;
+            height: 16px;
+        }
       & .userprofilename {
         & .userMailAdd, & .username {
           font-size: 12px;
