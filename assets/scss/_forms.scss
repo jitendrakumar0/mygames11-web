@@ -20,4 +20,41 @@
             filter: opacity(0.5);
         }
     }
+    & .selectlabel {
+        font-size: 14px;
+    }
+    & .form-check {
+        & .form-check-input {
+            background-image: none;
+            position: relative;
+            background-color: unset;
+            border: 1.6px solid $black;
+            width: 18px;
+            height: 18px;
+            &::before{
+                content: "";
+                width: 12px;
+                height: 12px;
+                border-radius: 50%;
+                position: absolute;
+                inset: 0;
+                margin: auto;
+            }
+            &:checked{
+                &::before{
+                    background-color: $black;
+                }
+            }
+        }
+    }
+    &.bgForm {
+        & .form-control, & .form-select {
+            background-color: $gray-300;
+            color: $black;
+        }
+    }
+    & .changepassword {
+        font-size: 14px;
+        color: $theme1;
+    }
 }
