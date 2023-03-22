@@ -385,10 +385,10 @@
 [data-page-name="changePasswordPage"] {
     @include media-breakpoint(basic) {
         & .mainCenterPart {
-            & .topPart{
+            & .topPart {
                 background-color: $theme1;
                 height: 40%;
-                & .imgOuter{
+                & .imgOuter {
                     width: 160px;
                 }
                 & .title {
@@ -401,7 +401,7 @@
                 margin-top: -112px;
                 & form {
                     &.form {
-                        & .tagLine{
+                        & .tagLine {
                             font-size: 10px;
                         }
                         & .dividarTxt {
@@ -415,26 +415,35 @@
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
-    @include media-breakpoint-up(sm) {}
+    @include media-breakpoint-up(sm) {
+    }
 
-    @include media-breakpoint-up(md) {}
+    @include media-breakpoint-up(md) {
+    }
 
-    @include media-breakpoint-up(lg) {}
+    @include media-breakpoint-up(lg) {
+    }
 
-    @include media-breakpoint-up(xl) {}
+    @include media-breakpoint-up(xl) {
+    }
 
-    @include media-breakpoint-up(xxl) {}
+    @include media-breakpoint-up(xxl) {
+    }
 
+    @include media-breakpoint-down(xxl) {
+    }
 
-    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xl) {
+    }
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(lg) {
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(md) {
+    }
 
-    @include media-breakpoint-down(md) {}
-
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+    }
 }
 
 // ! **************** [Change Password End ] ********************
@@ -455,7 +464,7 @@
         & .referoffcanvas {
             border-radius: 14px 14px 0px 0px;
             & .offcanvas-header {
-                & .underline{
+                & .underline {
                     & span {
                         height: 3px;
                         background-color: $black;
@@ -464,42 +473,49 @@
                     }
                 }
             }
-            & .offcanvas-body{
+            & .offcanvas-body {
                 background-color: $gray-300;
                 // border-radius: 14px 14px 0px 0px;
                 & .nodata {
                     font-size: 12px;
                 }
             }
-
         }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
-    @include media-breakpoint-up(sm) {}
+    @include media-breakpoint-up(sm) {
+    }
 
-    @include media-breakpoint-up(md) {}
+    @include media-breakpoint-up(md) {
+    }
 
-    @include media-breakpoint-up(lg) {}
+    @include media-breakpoint-up(lg) {
+    }
 
-    @include media-breakpoint-up(xl) {}
+    @include media-breakpoint-up(xl) {
+    }
 
-    @include media-breakpoint-up(xxl) {}
+    @include media-breakpoint-up(xxl) {
+    }
 
+    @include media-breakpoint-down(xxl) {
+    }
 
-    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xl) {
+    }
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(lg) {
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(md) {
+    }
 
-    @include media-breakpoint-down(md) {}
-
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+    }
 }
 
 // ! **************** [Refer Friend Page End ] ********************
-
 
 // ****************** [  Wallet Page ] **************
 [data-page-name="walletPage"] {
@@ -532,7 +548,7 @@
                 height: 40px;
             }
             & .winningAmount {
-                color: lighten($theme1,  15);
+                color: lighten($theme1, 15);
             }
             & .withdrawAmount {
                 margin-top: -28px;
@@ -543,31 +559,190 @@
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
-    @include media-breakpoint-up(sm) {}
+    @include media-breakpoint-up(sm) {
+    }
 
-    @include media-breakpoint-up(md) {}
+    @include media-breakpoint-up(md) {
+    }
 
-    @include media-breakpoint-up(lg) {}
+    @include media-breakpoint-up(lg) {
+    }
 
-    @include media-breakpoint-up(xl) {}
+    @include media-breakpoint-up(xl) {
+    }
 
-    @include media-breakpoint-up(xxl) {}
+    @include media-breakpoint-up(xxl) {
+    }
 
+    @include media-breakpoint-down(xxl) {
+    }
 
-    @include media-breakpoint-down(xxl) {}
+    @include media-breakpoint-down(xl) {
+    }
 
-    @include media-breakpoint-down(xl) {}
+    @include media-breakpoint-down(lg) {
+    }
 
-    @include media-breakpoint-down(lg) {}
+    @include media-breakpoint-down(md) {
+    }
 
-    @include media-breakpoint-down(md) {}
-
-    @include media-breakpoint-down(sm) {}
+    @include media-breakpoint-down(sm) {
+    }
 }
 
 // ! **************** [ Wallet Page End ] ********************
 
+// ****************** [  Transaction History Page ] **************
+[data-page-name="transactionPage"] {
+    @include media-breakpoint(basic) {
+        background-color: $gray-200;
+        & .mainCenterPart {
+            & .transectionCard {
+                & .card-body {
+                    & .additionImag {
+                        width: 18px;
+                        height: 18px;
+                        // border: 2px solid darken($success, 15);
+                        border: 2px solid $success;
+                        &.nagetiveImg {
+                            border-color: $danger;
+                        }
+                    }
+                    & .transactionBonus {
+                        font-size: 12px;
+                    }
+                    & .transactionId {
+                        font-size: 10px;
+                    }
+                }
+            }
+        }
+    }
 
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {
+    }
+
+    @include media-breakpoint-up(md) {
+    }
+
+    @include media-breakpoint-up(lg) {
+    }
+
+    @include media-breakpoint-up(xl) {
+    }
+
+    @include media-breakpoint-up(xxl) {
+    }
+
+    @include media-breakpoint-down(xxl) {
+    }
+
+    @include media-breakpoint-down(xl) {
+    }
+
+    @include media-breakpoint-down(lg) {
+    }
+
+    @include media-breakpoint-down(md) {
+    }
+
+    @include media-breakpoint-down(sm) {
+    }
+}
+
+// ! **************** [ Transaction History Page End ] ********************
+
+// ****************** [  Verify Your Account Page ] **************
+[data-page-name="verifyAccountPage"] {
+    @include media-breakpoint(basic) {
+        background-color: $gray-200;
+        & .mainCenterPart {
+            & .verifyNav {
+                box-shadow: 0px 0px 6px rgba($black, 0.1);
+                & .navTabs {
+                    & .nav-item {
+                        & .nav-link {
+                            font-size: 12px;
+                            &.active {
+                                color: darken($theme1, 5) !important;
+                            }
+                        }
+                    }
+                }
+            }
+            & .navContent {
+                & .mobileCard {
+                    box-shadow: 0px 0px 6px rgba($black, 0.1);
+                    & .card-body {
+                        & .mobileImg {
+                            width: 20px;
+                        }
+                        & .verifyMobile {
+                            font-size: 14px;
+                            line-height: 100%;
+                            &.verifyPanDetails {
+                                color: $theme1;
+                            }
+                        }
+                        & .mobileLabel,
+                        & .otpBtn {
+                            font-size: 12px;
+                        }
+                        & .form-control {
+                            border-bottom: 2px solid $black !important;
+                            font-size: 14px;
+                        }
+                        & .form-select {
+                            font-size: 14px;
+                        }
+                        & .otpverfication {
+                            font-size: 10px;
+                        }
+                    }
+                }
+                & .verifyPanCard {
+                    & .idCard {
+                        height: 50px;
+                    }
+                }
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {
+    }
+
+    @include media-breakpoint-up(md) {
+    }
+
+    @include media-breakpoint-up(lg) {
+    }
+
+    @include media-breakpoint-up(xl) {
+    }
+
+    @include media-breakpoint-up(xxl) {
+    }
+
+    @include media-breakpoint-down(xxl) {
+    }
+
+    @include media-breakpoint-down(xl) {
+    }
+
+    @include media-breakpoint-down(lg) {
+    }
+
+    @include media-breakpoint-down(md) {
+    }
+
+    @include media-breakpoint-down(sm) {
+    }
+}
+
+// ! **************** [ Verify Your Account Page End ] ********************
 
 [data-bs-theme="dark"] {
     & [data-page-name="signin"] {
@@ -605,6 +780,13 @@
 @include media-breakpoint(basic) {
     .profileOffcanvas {
         width: 360px !important;
+        & .profileoffcanvasHeader {
+            & .userprofilename {
+                & .username, & .userMailAdd  {
+                    font-size: 14px;
+                }
+            }
+        }
         & .offcanvas-body {
             & .innerbody {
                 & .linkBox {
@@ -634,6 +816,36 @@
             & .addlink {
                 font-size: 14px;
                 font-weight: 400;
+            }
+        }
+    }
+
+    .modal-backdrop {
+        &.fade {
+            &.show {
+                display: none;
+            }
+        }
+    }
+    .otpModal {
+        background-color: rgba($black, 0.5);
+        & .innerModal {
+            & .modal-content {
+                & .modal-body {
+                    & .card {
+                        & .card-body{
+                            & .form-control, & .enterCode {
+                                font-size: 14px;
+                            }
+                            & .form-control{
+                                border-bottom: 2px solid $black !important;
+                            }
+                            & .otpBtn {
+                                font-size: 12px;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
