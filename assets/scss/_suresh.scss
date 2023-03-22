@@ -21,6 +21,8 @@
         }
         .fs-10 {
             font-size: 10px !important;
+        }.fs-14 {
+            font-size: 14px !important;
         }
         
         // .select2{
@@ -2732,3 +2734,311 @@
 
 // ! @@@@@@@@@@@@@@@@@@@@@@[  my profile end  ]@@@@@@@@@@@@@@@@@@@@@@
 
+// ? @@@@@@@@@@@@@@@@@@@@@@[  other menu start  ]@@@@@@@@@@@@@@@@@@@@@@
+[data-page-name=otherMenu] {
+    @include media-breakpoint(basic) {
+        & .moreMain {
+            & ul {
+                & li {
+                    & .links {
+                        & .icon{
+                            width: 20px;
+                            height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {}
+
+    @include media-breakpoint-up(md) {}
+
+    @include media-breakpoint-up(lg) {}
+
+    @include media-breakpoint-up(xl) {}
+
+    @include media-breakpoint-up(xxl) {}
+
+
+    @include media-breakpoint-down(xxl) {}
+
+    @include media-breakpoint-down(xl) {}
+
+    @include media-breakpoint-down(lg) {}
+
+    @include media-breakpoint-down(md) {}
+
+    @include media-breakpoint-down(sm) {}
+}
+
+[data-bs-theme=dark] {
+    & [data-page-name=myProfilePage] {
+        @include dark-media-breakpoint(basic) {
+            
+        }
+
+        // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+        @include dark-media-breakpoint-up(sm) {
+        }
+        @include dark-media-breakpoint-up(md) {
+        }
+        @include dark-media-breakpoint-up(lg) {
+        }
+        @include dark-media-breakpoint-up(xl) {
+        }
+        @include dark-media-breakpoint-up(xxl) {
+        }
+    
+    
+        @include dark-media-breakpoint-down(xxl) {
+        }
+        @include dark-media-breakpoint-down(xl) {
+        }
+        @include dark-media-breakpoint-down(lg) {
+        }
+        @include dark-media-breakpoint-down(md) {
+        }
+        @include dark-media-breakpoint-down(sm) {
+        }
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  other menu end  ]@@@@@@@@@@@@@@@@@@@@@@
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  overFantasy point system start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+[data-page-name=overFantasyPointSystemPage] {
+    @include media-breakpoint(basic) {
+        & .cricketheader {
+            box-shadow: 0px 0px 6px rgba($black, 0.1) !important;
+            min-height: 54px;
+            background-color: $theme1;
+            z-index: 1;
+        }
+        & .topPointHeading {
+            font-size: 12px;
+        }
+        & .pointAccirdion {
+            & .accordion-item {
+                & .accordion-header {
+                    & .accordion-button {
+                        font-size: 12px;
+                        & .categoryIcone {
+                            width: 30px;
+                            height: 30px;
+                        }
+                        &::after {
+                            background-image: url(../svg/icons/downArrowAccordion.svg);
+                            background-position: center;
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            width: 12px;
+                            height: 12px;
+                        }
+                    }
+                }
+                & .accordion-body {
+                    background-color: $gray-300;
+                    & .activitiValue,
+                    & .activitiHeading {
+                        font-size: 12px;
+                    }
+                    & .subheading {
+                        font-size: 10px;
+                        & span {
+                            line-height: 100%;
+                        }
+                    }
+                    & .activitiValue {
+                        color: darken($success, 0);
+                    }
+                }
+            }
+        }
+        & .peraHeading {
+            font-size: 14px;
+            line-height: 100%;
+        }
+        & .peraContent {
+            font-size: 11px;
+            line-height: 100%;
+            & span {
+                line-height: 75%;
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {
+    }
+
+    @include media-breakpoint-up(md) {
+    }
+
+    @include media-breakpoint-up(lg) {
+    }
+
+    @include media-breakpoint-up(xl) {
+    }
+
+    @include media-breakpoint-up(xxl) {
+    }
+
+    @include media-breakpoint-down(xxl) {
+    }
+
+    @include media-breakpoint-down(xl) {
+    }
+
+    @include media-breakpoint-down(lg) {
+    }
+
+    @include media-breakpoint-down(md) {
+    }
+
+    @include media-breakpoint-down(sm) {
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  overFantasy point system end  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  partner program start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+[data-page-name=partnerProgramPage] {
+    @include media-breakpoint(basic) {
+        & .form{
+            & .form-control {
+                border: none !important;
+                border-radius: 0 !important;
+                border-bottom: 1px solid $dark !important;
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {
+    }
+
+    @include media-breakpoint-up(md) {
+    }
+
+    @include media-breakpoint-up(lg) {
+    }
+
+    @include media-breakpoint-up(xl) {
+    }
+
+    @include media-breakpoint-up(xxl) {
+    }
+
+    @include media-breakpoint-down(xxl) {
+    }
+
+    @include media-breakpoint-down(xl) {
+    }
+
+    @include media-breakpoint-down(lg) {
+    }
+
+    @include media-breakpoint-down(md) {
+    }
+
+    @include media-breakpoint-down(sm) {
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  partner program end  ]@@@@@@@@@@@@@@@@@@@@@@
+
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  contect us start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+[data-page-name=contactUsPage] {
+    @include media-breakpoint(basic) {
+        & .contactUsMain{
+            & .icon{
+                width: 36px;
+                height: 36px;
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {
+    }
+
+    @include media-breakpoint-up(md) {
+    }
+
+    @include media-breakpoint-up(lg) {
+    }
+
+    @include media-breakpoint-up(xl) {
+    }
+
+    @include media-breakpoint-up(xxl) {
+    }
+
+    @include media-breakpoint-down(xxl) {
+    }
+
+    @include media-breakpoint-down(xl) {
+    }
+
+    @include media-breakpoint-down(lg) {
+    }
+
+    @include media-breakpoint-down(md) {
+    }
+
+    @include media-breakpoint-down(sm) {
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  contect us end  ]@@@@@@@@@@@@@@@@@@@@@@
+
+// ? @@@@@@@@@@@@@@@@@@@@@@[  treams condition start  ]@@@@@@@@@@@@@@@@@@@@@@
+
+[data-page-name=treamsConditionPage] {
+    @include media-breakpoint(basic) {
+        & .treamsConditionMain{
+            
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {
+    }
+
+    @include media-breakpoint-up(md) {
+    }
+
+    @include media-breakpoint-up(lg) {
+    }
+
+    @include media-breakpoint-up(xl) {
+    }
+
+    @include media-breakpoint-up(xxl) {
+    }
+
+    @include media-breakpoint-down(xxl) {
+    }
+
+    @include media-breakpoint-down(xl) {
+    }
+
+    @include media-breakpoint-down(lg) {
+    }
+
+    @include media-breakpoint-down(md) {
+    }
+
+    @include media-breakpoint-down(sm) {
+    }
+}
+
+// ! @@@@@@@@@@@@@@@@@@@@@@[  treams condition end  ]@@@@@@@@@@@@@@@@@@@@@@
