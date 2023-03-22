@@ -66,7 +66,7 @@
         <meta property="og:image:height" content="512">
 
         <!--  Title -->
-        <title>My Games 11 |  Wallet</title>
+        <title>My Games 11 |  Transaction  History</title>
         <!-- Required meta tags -->
         <meta name="title" content="My Games11" />
         <meta name="description" content="description will be here" />
@@ -110,99 +110,65 @@
             <div class="row mainInner bg-white">
                 <navbar class="col-12 header py-3">
                     <div class="row align-items-center h-100">
-                        <div class="col-auto"><a href="home.html" class="backBtn d-flex align-items-center justify-content-center"><img class="w-100" src="assets/svg/icons/leftCricleArrow.png" alt=""></a></div>
-                        <div class="col"><div class="title text-white text-center">Wallet</div></div>
+                        <div class="col-auto"><a href="wallet.html" class="backBtn d-flex align-items-center justify-content-center"><img class="w-100" src="assets/svg/icons/leftCricleArrow.png" alt=""></a></div>
+                        <div class="col"><div class="title text-white text-center">Transaction</div></div>
                         <div class="col-auto"><div class="backBtn"></div></div>
                     </div>
                 </navbar>
-                <div class="col-12 px-0 flex-fill" data-page-name="walletPage" data-scrollbar>
-                    <div class="row mainCenterPart g-4 mx-0 py-4">
+                <div class="col-12 px-0 flex-fill" data-page-name="transactionPage" data-scrollbar>
+                    <div class="row mainCenterPart g-3 mx-0 py-4">
                         <div class="col-12">
-                            <div class="row mx-0 align-items-center">
-                                <div class="col-auto"><div class="rounded-circle d-flex align-items-center justify-content-center rupees text-white fw-bold">₹</div></div>
-                                <div class="col">
-                                    <div class="balance text-black fw-semibold">Total Balance</div>
-                                    <div class="balanceAmount fw-bold text-muted">₹ 100.00</div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="warningCard bg-white card border-0 rounded-4">
-                                <div class="card-body">
-                                    <div class="row mx-0 align-items-center">
-                                        <div class="col-auto ps-0"><div class="warningImg rounded-circle"><img src="assets/svg/icons/contests.png" class="w-100" alt=""></div></div>
-                                        <div class="col">
-                                            <div class="balanceAmount text-black fw-bold">Your Winnings</div>
-                                            <div class="balance text-muted">Withdraw Your Winnings</div>
+                            <div class="card rounded-3 transectionCard border border-light border-1">
+                                <div class="card-body px-0 py-2">
+                                    <div class="row mx-0">
+                                        <div class="col d-flex align-items-center pe-0">
+                                            <div class="me-2"><div class="additionImag d-flex rounded-circle"><img src="assets/svg/icons/plus_icon.svg" class="w-100 h-100" alt=""></div></div>
+                                            <div class="">
+                                                <div class="transactionBonus text-black fw-bold">Mobile Bonus</div>
+                                                <div class="transactionId text-muted fw-semibold">Transaction Id: MG11-EBONUS-1679051956464</div>
+                                                <div class="transactionId text-muted fw-semibold">19 Mar 2023 16:49</div>
+                                            </div>
                                         </div>
-                                        <div class="col-auto pe-0"><div class="winningAmount balanceAmount fw-bold">₹ 0.00</div></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="withdrawAmount card border-0 rounded-4 pt-3 position-relative">
-                                <a href="verifyAccount.html" class="py-4 pb-3 text-decoration-none balanceAmount text-center fw-semibold text-white">Withdraw Amount</a>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="dipositCard rounded-4 shadow bg-white p-2 text-center">
-                                <div class="warningImg rounded-circle mx-auto mb-2"><img src="assets/svg/icons/deposit_icon.png" class="w-100" alt=""></div>
-                                <div class="balance fw-bold text-black">Deposited</div>
-                                <div class="subbalance text-muted">Mony You Add</div>
-                                <div class="subbalance fw-bold text-danger">₹ 0.00</div>
-                            </div>
-                        </div>
-                        <div class="col-6">
-                            <div class="dipositCard rounded-4 shadow bg-white p-2 text-center">
-                                <div class="warningImg rounded-circle mx-auto mb-2"><img src="assets/svg/icons/cash_bonus.png" class="w-100" alt=""></div>
-                                <div class="balance fw-bold text-black">Case Bonus</div>
-                                <div class="subbalance text-muted">Offer Earned Cash Bonus</div>
-                                <div class="subbalance fw-bold text-success">₹ 100.00</div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="warningCard addcase card border-0 rounded-4 position-relative">
-                                <div class="card-body">
-                                    <div class="row mx-0 align-items-center">
-                                        <div class="col-auto ps-0"><div class="warningImg rounded-circle"><img src="assets/svg/icons/contests.png" class="w-100" alt=""></div></div>
-                                        <div class="col"        >
-                                            <a href="deposit-Case.html" class="balanceAmount stretched-link text-white fw-bold">Add Case</a>
-                                            <div class="balance text-white">UPI,Credit Card,Debit Card & more</div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12"> 
-                            <div class="warningCard bg-white card border-0 rounded-4 position-relative">
-                                <div class="card-body">
-                                    <div class="row mx-0 align-items-center">
-                                        <div class="col-auto ps-0"><div class="warningImg rounded-circle"><img src="assets/svg/icons/transaction.png" class="w-100" alt=""></div></div>
-                                        <div class="col">
-                                            <a href="transaction .html" class="balanceAmount stretched-link text-muted fw-bold">Transaction History</a>
+                                        <div class="col-auto">
+                                            <div class="transactionBonus text-success fw-bold">Rs 50.00</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="warningCard bg-white card border-0 rounded-4 position-relative">
-                                <div class="card-body">
-                                    <div class="row mx-0 align-items-center">
-                                        <div class="col-auto ps-0"><div class="warningImg rounded-circle"><img src="assets/svg/icons/referral.png" class="w-100" alt=""></div></div>
-                                        <div class="col">
-                                            <a href="inviteFriend.html" class="balanceAmount stretched-link text-muted fw-bold">Invite Your Friends</a>
+                            <div class="card rounded-3 transectionCard border border-light border-1">
+                                <div class="card-body px-0 py-2">
+                                    <div class="row mx-0">
+                                        <div class="col d-flex align-items-center pe-0">
+                                            <div class="me-2"><div class="additionImag nagetiveImg d-flex rounded-circle"><img src="assets/svg/icons/nagetive_icon.svg" class="w-100 h-100" alt=""></div></div>
+                                            <div class="">
+                                                <div class="transactionBonus text-black fw-bold">Contest Joining Fee</div>
+                                                <div class="transactionId text-muted fw-semibold">Transaction Id: MG11-1679051954524-YNDR</div>
+                                                <div class="transactionId text-muted fw-semibold">18 Mar 2023 09:27</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="transactionBonus text-danger fw-bold">Rs 50.00</div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-12">
-                            <div class="warningCard bg-white card border-0 rounded-4 position-relative">
-                                <div class="card-body">
-                                    <div class="row mx-0 align-items-center">
-                                        <div class="col-auto ps-0"><div class="warningImg rounded-circle"><img src="assets/svg/icons/kyc_icon.png" class="w-100" alt=""></div></div>
-                                        <div class="col">
-                                            <a href="verifyAccount.html" class="balanceAmount stretched-link text-muted fw-bold">Kyc & Verify Your Account</a>
+                            <div class="card rounded-3 transectionCard border border-light border-1">
+                                <div class="card-body px-0 py-2">
+                                    <div class="row mx-0">
+                                        <div class="col d-flex align-items-center pe-0">
+                                            <div class="me-2"><div class="additionImag d-flex rounded-circle"><img src="assets/svg/icons/plus_icon.svg" class="w-100 h-100" alt=""></div></div>
+                                            <div class="">
+                                                <div class="transactionBonus text-black fw-bold">Email Bonus</div>
+                                                <div class="transactionId text-muted fw-semibold">Transaction Id: MG11-EBONUS-1679051957591</div>
+                                                <div class="transactionId text-muted fw-semibold">17 Mar 2023 18:03</div>
+                                            </div>
+                                        </div>
+                                        <div class="col-auto">
+                                            <div class="transactionBonus text-success fw-bold">Rs 50.00</div>
                                         </div>
                                     </div>
                                 </div>
