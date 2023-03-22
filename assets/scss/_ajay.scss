@@ -744,6 +744,135 @@
 
 // ! **************** [ Verify Your Account Page End ] ********************
 
+// ****************** [  Notification Page ] **************
+[data-page-name="notificationPage"] {
+    @include media-breakpoint(basic) {
+        background-color: $gray-200;
+        & .mainCenterPart {
+            & .notificationDay {
+                font-size: 14px;
+            }
+            & .notificationCard {
+                box-shadow: 0px 0px 6px rgba($black, 0.1);
+                border: 1.6px solid rgba($black, 0.3);
+                & .notificationDateTime {
+                    font-size: 12px;
+                }
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {
+    }
+
+    @include media-breakpoint-up(md) {
+    }
+
+    @include media-breakpoint-up(lg) {
+    }
+
+    @include media-breakpoint-up(xl) {
+    }
+
+    @include media-breakpoint-up(xxl) {
+    }
+
+    @include media-breakpoint-down(xxl) {
+    }
+
+    @include media-breakpoint-down(xl) {
+    }
+
+    @include media-breakpoint-down(lg) {
+    }
+
+    @include media-breakpoint-down(md) {
+    }
+
+    @include media-breakpoint-down(sm) {
+    }
+}
+
+// ! **************** [ Notification Page End ] ********************
+
+// ****************** [  Create Contests Page ] **************
+[data-page-name="createContestsPage"] {
+    @include media-breakpoint(basic) {
+        background-color: $gray-200;
+        & .mainCenterPart {
+            & .verifyNav {
+                box-shadow: 0px 0px 6px rgba($black, 0.1);
+                & .navTabs {
+                    & .nav-item {
+                        & .nav-link {
+                            font-size: 12px;
+                            &.active {
+                                color: darken($theme1, 5) !important;
+                            }
+                        }
+                    }
+                }
+            }
+            & .navContent {
+                & .contestCard {
+                box-shadow: 0px 0px 6px rgba($black, 0.1);
+                & .card-body{
+                    & .form-floating {
+                        & .form-control, & .formLabel {
+                            font-size: 14px;
+                            color: rgba($black, 0.3);
+                        }
+                        & .invaildLabel {
+                            font-size: 12px;
+                        }
+                    }
+                    & .joinMultiple {
+                        font-size: 12px;
+                    }
+                }
+                }
+            }
+        }
+    }
+
+    // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
+    @include media-breakpoint-up(sm) {
+    }
+
+    @include media-breakpoint-up(md) {
+    }
+
+    @include media-breakpoint-up(lg) {
+    }
+
+    @include media-breakpoint-up(xl) {
+    }
+
+    @include media-breakpoint-up(xxl) {
+    }
+
+    @include media-breakpoint-down(xxl) {
+    }
+
+    @include media-breakpoint-down(xl) {
+    }
+
+    @include media-breakpoint-down(lg) {
+    }
+
+    @include media-breakpoint-down(md) {
+    }
+
+    @include media-breakpoint-down(sm) {
+    }
+}
+
+// ! **************** [ Create Contests Page End ] ********************
+
+
+
+
 [data-bs-theme="dark"] {
     & [data-page-name="signin"] {
         @include dark-media-breakpoint(basic) {
