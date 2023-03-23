@@ -111,7 +111,7 @@
                 <navbar class="col-12 header d-flex align-items-center px-0">
                     <div class="row mx-0 innerheader align-items-center w-100">
                         <div class="col-auto notification">
-                            <a href="home.html" type="button" class="notificationIcon shadow-none bg-transparent p-0 border-0"><img src="assets/svg/icons/leftCricleArrow.png" class="w-100" alt="bell"></a>
+                            <a href="upcomingMatcheDetails.html" type="button" class="notificationIcon shadow-none bg-transparent p-0 border-0"><img src="assets/svg/icons/leftCricleArrow.png" class="w-100" alt="bell"></a>
                         </div>
                         <div class="col"><div class="title text-white text-center">IK vs NN</div><div class="title text-white text-center">01h:54m:05s</div></div>
                         <div class="col-auto notification">
@@ -130,7 +130,7 @@
                             <div class="col-12 flex-fill h-100 overflow-y-auto">
                                 <div class="tab-content navContent" id="pills-tabContent">
                                     <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
-                                        <div class="row mx-0 py-3">
+                                        <div class="row mx-0 py-3 g-3">
                                             <div class="col-12 px-0">
                                                 <div class="card border-0 contestCard">
                                                     <foem class="card-body row mx-0 px-2 g3">
@@ -150,16 +150,39 @@
                                                             <div class="invaildLabel fw-bold text-black-50">min 2</div> 
                                                         </div>
                                                         <div class="col-12 px-0 mt-4">
-                                                            <div class="row mx-0">
+                                                            <div class="row mx-0 align-items-center">
                                                                 <div class="col fw-bold text-black joinMultiple">Allow friends to join multiple teams</div>
+                                                                <div class="col-auto checkBoxBtn"><div class="check-box"><input type="checkbox"></div></div>
                                                             </div>
                                                         </div>
                                                     </foem>
                                                 </div>
                                             </div>
+                                            <div class="col-12 px-0">
+                                                <div class="card border-0 contestCard">
+                                                    <div class="card-body row mx-0 px-0 gap-2 text-center">
+                                                        <div class="col-12 text-muted fw-bold enteryFee">Entry Fee Per Team:<span class="text-danger">₹ 0.0</span></div>
+                                                        <div class="col-12 text-muted fw-bold enteryFee">Enter Fee is calculated based on the total prize amount and & contest size</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
+                                        <div class="row mx-0 py-3 g-3">
+                                            <div class="col-12 fw-semibold text-black inviteContest">If You have a contest invite code, enter it and join</div>
+                                            <div class="col-12 px-0">
+                                                <div class="card border-0 contestCard">
+                                                    <foem class="card-body row mx-0 px-2 gap-2 pt-1">
+                                                        <div class="col-12 form-floating">
+                                                            <input type="text" class="form-control shadow-none fw-bold border-0 border-bottom border-bottom-1 rounded-0" id="floatingInput" placeholder="Invite Code">
+                                                            <label for="floatingInput" class="formLabel fw-bold">Invite Code</label>
+                                                        </div>
+                                                        <div class="col-12"><button type="submit" class="btn btn-sm btnStyle2 text-center w-100 text-uppercase text-white">JOIN THIS CONTEST</button></div>
+                                                    </foem>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

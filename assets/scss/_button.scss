@@ -26,7 +26,7 @@
     }
   }
   .btnSuccess {
-    background-color: lighten($success, 10);
+    background-color: lighten($success, 5);
     border-radius: 8px;
     padding: 4px 16px;
     font-size: 14px;
@@ -48,6 +48,15 @@
   }
   .footerBtn {
     font-size: 14px;
+  }
+  .bottomFixedBtn {
+    .createBtn {
+      font-size: 14px;
+      border: 1.6px solid rgba($black, 0.6);
+      padding: 0.25rem 1rem;
+      color: darken($theme1, 10);
+    }
+    bottom: 20px;
   }
 }
 
