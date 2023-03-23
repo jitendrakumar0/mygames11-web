@@ -50,13 +50,17 @@
     font-size: 14px;
   }
   .bottomFixedBtn {
-    .createBtn {
+    & .createBtn {
+      min-width: 124px;
       font-size: 14px;
       border: 1.6px solid rgba($black, 0.6);
       padding: 0.25rem 1rem;
       color: darken($theme1, 10);
+      &.createTeam{
+        border: 1.6px solid $theme1 !important;
+      }
     }
-    bottom: 20px;
+    bottom: 10px;
   }
 }
 
