@@ -1537,24 +1537,25 @@
                         }
                     }
                 & .player{
-                    // & .form-check-input{
-                    //     &:checked {
-                    //         &~label {
-                    //             background-color: lighten($success, 55);
-                    //             & .select{
-                    //                 & span {
-                    //                     display: none !important;
-                    //                     &:nth-child(2){
-                    //                         display: flex !important;
-                    //                     }
-                    //                 }
-                    //             }
-                    //         }
-                    //     }
-                    // }
-                    // & label {
-                    //     cursor: pointer;
-                    // }
+                    background-color: $white;
+                    & .form-check-input{
+                        &:checked {
+                            &~label {
+                                background-color: lighten($success, 55);
+                                & .select{
+                                    & span {
+                                        display: none !important;
+                                        &:nth-child(2){
+                                            display: flex !important;
+                                        }
+                                    }
+                                }
+                            }
+                        }
+                    }
+                    & label {
+                        cursor: pointer;
+                    }
                     & .winningAmount {
                         & .captainLabel {
                             width: 22px;
