@@ -1474,14 +1474,102 @@
         background-color: $gray-200;
         & .mainCenterPart {
             & .chooseCaptain {
-                & .fs-14 {
-                    font-size: 14px;
+            }
+            & .fs-14 {
+                font-size: 14px;
+            }
+            & .fs-12{
+                font-size: 12px;
+            }
+            & .fs-10{
+                font-size: 10px;
+            }
+            & .fs-8 {
+                font-size: 8px !important;
+            }
+            & .playersOuter{
+                & .teamDetail {
+                    & .imgOuter {
+                        width: 40px;
+                        height: 40px;
+                        & img {
+                            object-fit: cover;
+                            object-position: center top;
+                        }
+                    }
+                    & .teamName{
+                        left: -12px;
+                        bottom: -8px;
+                    }
+                    & .playingStatus {
+                        & span {
+                            display: block;
+                            width: 8px;
+                            height: 8px;
+                        }
+                        &.play {
+                            color: $success;
+                            & span {
+                                background-color: $success;
+                            }
+                        }
+                        
+                        &.notPlay {
+                            color: $theme2;
+                            & span {
+                                background-color: $theme2;
+                            }
+                        }
+                    }
                 }
-                & .fs-12{
-                    font-size: 12px;
-                }
-                & .fs-10{
-                    font-size: 10px;
+                    & .select{
+                        & span {
+                            width: 22px;
+                            height: 22px;
+                            border: 2px solid lighten($success, 10);
+                            color: lighten($success, 10);
+                            font-size: 18px;
+                            font-weight: bold;
+                            &:nth-child(2){
+                                border-color: $theme2;
+                                color: $theme2;
+                            }
+                        }
+                    }
+                & .player{
+                    // & .form-check-input{
+                    //     &:checked {
+                    //         &~label {
+                    //             background-color: lighten($success, 55);
+                    //             & .select{
+                    //                 & span {
+                    //                     display: none !important;
+                    //                     &:nth-child(2){
+                    //                         display: flex !important;
+                    //                     }
+                    //                 }
+                    //             }
+                    //         }
+                    //     }
+                    // }
+                    // & label {
+                    //     cursor: pointer;
+                    // }
+                    & .winningAmount {
+                        & .captainLabel {
+                            width: 22px;
+                            height: 22px;
+                            border: 2px solid $black;
+                            font-size: 10px;
+                        }
+                        & .caprainInput {
+                            &:checked~label{
+                                background-color: rgba($black, 0.8);
+                                color: $white;
+                                
+                            }
+                        }
+                    }
                 }
             }
         }
