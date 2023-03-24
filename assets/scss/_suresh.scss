@@ -16,6 +16,16 @@
                 font-size: 12px;
             }
         }
+        .navtab {
+            & .nav-item{
+                & .nav-link{
+                    outline: none !important;
+                }
+            }
+        }
+        button, a {
+            outline: none !important;
+        }
         .fs-12 {
             font-size: 12px !important;
         }
@@ -3245,22 +3255,37 @@
                         left: -12px;
                     }
                     & .playingStatus {
-                        & span {
-                            display: block;
+                        color: $success;
+                        &::before {
+                            content: '';
                             width: 8px;
                             height: 8px;
+                            display: block;
+                            border-radius: 50px;
+                            background-color: $success;
+                            margin-right: 5px;
+                            margin-bottom: 2px;
                         }
                         &.play {
-                            color: $success;
                             & span {
-                                background-color: $success;
+                                &:nth-child(1){
+                                    display: block;
+                                }
                             }
                         }
                         
-                        &.notPlay {
-                            color: $theme2;
+                        &.notplay {
+                            &::before {
+                                background-color: $theme2 !important;
+                            }
                             & span {
-                                background-color: $theme2;
+                                &:nth-child(1){
+                                    display: none;
+                                }
+                                &:nth-child(2){
+                                    color: $theme2;
+                                    display: block !important;
+                                }
                             }
                         }
                     }
