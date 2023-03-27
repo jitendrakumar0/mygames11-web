@@ -507,8 +507,47 @@
                         </div>
                         <div class="col-12 bg-transprient d-flex justify-content-around align-items-center bg-transparent text-center position-fixed bottomFixedBtn">
                             <a href="teamView.html" class="createBtn createTeam rounded-3 fw-semibold bg-white">Team Preview</a>
-                            <a href="chooseYourCaptain.html" class="createBtn createTeam rounded-3 fw-semibold bg-white continueFill">Continue</a>
+                            <a href="javascript:;" class="createBtn createTeam rounded-3 fw-semibold bg-white continueFill" data-bs-toggle="modal" data-bs-target="#exampleModal">Continue</a>
                         </div>
+                    </div>
+                </div>
+                <!-- Button trigger modal -->
+                <!-- <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Launch demo modal
+                </button> -->
+                
+                <!-- Modal -->
+                <div class="modal fade bg-black confermationModal" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+                    <div class="modal-content border-0 rounded-4">
+                        <div class="modal-header border-0">
+                            <div class="modal-title" id="exampleModalLabel">
+                                <div class="confiramtionHeading fw-semibold text-black fs-6">CONFIRMATION</div>
+                                <div class="balance fw-semibold">Unutilized Balance + Winnings = ₹0.00</div>
+                            </div>
+                            <button type="button" class="shadow-none border-0 bg-transparent p-0" data-bs-dismiss="modal" aria-label="Close"><img src="assets/svg/icons/close-_icon.svg" class="w-100" alt=""></button>
+                        </div>
+                        <div class="modal-body row mx-0">
+                            <div class="col-12 px-0 row mx-0 align-items-center">
+                                <div class="col leftEntery fw-semibold px-0">Entry</div>
+                                <div class="col-auto prich fw-semibold pe-0">₹ 550.00</div>
+                            </div>
+                            <div class="col-12 px-0 row mx-0 align-items-center bonus pb-1">
+                                <div class="col leftEntery fw-semibold px-0">Usable Cash Bonus</div>
+                                <div class="col-auto prich fw-semibold pe-0">₹ 27.50</div>
+                            </div>
+                            <div class="col-12 px-0 row mx-0 align-items-center mt-3 mb-2 payAmount">
+                                <div class="col leftEntery fw-semibold px-0">To Pay</div>
+                                <div class="col-auto prich fw-semibold pe-0">₹ 522.5</div>
+                            </div>
+                            <div class="col-12 joinAddress fw-semibold text-center">By joining this contest,you accept MyGames11’s T&C and confirm that you are not a resident of Assam, Odhissa, Telangana, Nagaland & Sikkim.</div>
+                        </div>
+                        <div class="modal-footer border-0 justify-content-center">
+                            <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-primary">Save changes</button> -->
+                            <button class="invite btn btn-success px-5 text-white btn-md fs-6">JOIN CONTEST</button>
+                        </div>
+                    </div>
                     </div>
                 </div>
             </div>
