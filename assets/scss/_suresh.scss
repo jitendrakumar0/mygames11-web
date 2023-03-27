@@ -16,6 +16,16 @@
                 font-size: 12px;
             }
         }
+        .navtab {
+            & .nav-item{
+                & .nav-link{
+                    outline: none !important;
+                }
+            }
+        }
+        button, a {
+            outline: none !important;
+        }
         .fs-12 {
             font-size: 12px !important;
         }
@@ -24,231 +34,6 @@
         }.fs-14 {
             font-size: 14px !important;
         }
-        
-        // .select2{
-        //     &.select2-container {
-        //         & .selection{
-        //             & .select2-selection {
-        //                 border: 1px solid $gray-500 !important;
-        //                 height: 40px !important;
-        //                 padding: 8px 12px !important;
-        //                 border-radius: 6px;
-        //                 &.select2-selection--single {
-        //                     & .select2-selection__rendered{
-        //                         padding: 0;
-        //                         line-height: normal;
-        //                         font-size: 14px;
-        //                     }
-        //                     & .select2-selection__arrow {
-        //                         height: 100%;
-        //                         position: absolute;
-        //                         top: 0;
-        //                         right: 4px;
-        //                         width: 20px;
-        //                         & b{
-
-        //                         }
-        //                     }
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
-        // .select2-container {
-        //     &.select2-container--open{
-        //         & .select2-dropdown {
-        //             border-radius: 6px;
-        //             border: none !important;
-        //             box-shadow: 0px 1px 10px $gray-300;
-        //             overflow: hidden;
-        //             & .select2-search{
-        //                 &.select2-search--dropdown{
-        //                     padding: 8px;
-        //                     & .select2-search__field{
-        //                         border-radius: 6px;
-        //                         border-color: $gray-500 !important;
-        //                         height: 28px;
-        //                         padding: 8px;
-        //                         font-size: 14px;
-        //                         outline: none;
-        //                         transition: ease-in-out .3s;
-        //                         &:focus {
-        //                             border-color: $theme1 !important;
-        //                         }
-        //                     }
-        //                 }
-        //             }
-        //             & .select2-results{
-        //                 & .select2-results__options {
-        //                     font-size: 14px;
-        //                     font-weight: 600;
-        //                     overflow: hidden auto;
-        //                     height: 100%;
-        //                     max-height: 200px;
-        //                     & .select2-results__option {
-        //                         &.select2-results__option--selectable {
-        //                             padding: 6px 8px;
-        //                             &:hover {
-        //                                 background-color: lighten($theme1, 42);
-        //                                 color: $theme1;
-        //                             }
-        //                             &.select2-results__option--selected{
-        //                                 background-color: $theme1;
-        //                                 color: $white;
-        //                             }
-        //                             &.select2-results__option--highlighted {
-        //                             }
-        //                         }
-        //                     }
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
-
-        // .flatpickr-calendar {
-        //     border-radius: 15px;
-        //     &.arrowTop {
-        //         &:before, &:after {
-        //             border-bottom-color: $theme1;
-        //         }
-        //     }
-        //     & .flatpickr-months {
-        //         position: relative;
-        //         background-color: $theme1;
-        //         border-radius: 15px 15px 0 0;
-        //         padding: 4px 10px;
-        //         align-items: center;
-        //         display: flex;
-        //         justify-content: center;
-        //         gap: 10px;
-        //         & .flatpickr-prev-month {
-        //             align-items: center;
-        //             display: flex;
-        //             padding: 0;
-        //             width: 20px;
-        //             height: 20px;
-        //             justify-content: center;
-        //             background: lighten($theme1, 20);
-        //             border-radius: 50%;
-        //             position: unset;
-        //             & svg {
-        //                 width: 10px;
-        //                 height: 10px;
-        //                 fill: $white !important;
-        //             }
-        //             &:hover {
-        //                 background: lighten($theme1, 10);
-        //             }
-        //         }
-        //         & .flatpickr-next-month {
-        //             align-items: center;
-        //             display: flex;
-        //             padding: 0;
-        //             width: 20px;
-        //             height: 20px;
-        //             justify-content: center;
-        //             background: lighten($theme1, 20);
-        //             border-radius: 50%;
-        //             position: unset;
-        //             & svg {
-        //                 width: 10px;
-        //                 height: 10px;
-        //                 fill: $white !important;
-        //             }
-        //             &:hover {
-        //                 background: lighten($theme1, 10);
-        //             }
-        //         }
-        //         & .flatpickr-month {
-        //             & .flatpickr-current-month {
-        //                 padding: 0;
-        //                 align-items: center;
-        //                 display: flex;
-        //                 justify-content: center;
-        //                 & .select2-container {
-        //                     & .selection {
-        //                         & .select2-selection {
-        //                             background-color: transparent !important;
-        //                             border: 0 !important;
-        //                             padding: 0 !important;
-        //                             height: unset !important;
-        //                             & .select2-selection__rendered{
-        //                                 color: $white;
-        //                             }
-        //                         }
-        //                     }
-        //                 }
-        //                 & .flatpickr-monthDropdown-months {
-        //                     font-size: 14px;
-        //                     color: $white;
-        //                     &:hover {
-        //                         background-color: transparent;
-        //                     }
-        //                     & .flatpickr-monthDropdown-month {
-        //                         background: lighten($theme1, 10);
-        //                         overflow: hidden;
-        //                     }
-        //                 }   
-        //             }
-        //             & .numInputWrapper {
-        //                 margin-left: 8px;
-        //                 font-size: 14px;
-        //                 color: $white;
-        //                 & .arrowUp {
-        //                     border: none;
-        //                     margin-right: -8px;
-        //                     &:after {
-        //                         border-bottom-color: rgb($white, 90%);
-        //                     }
-        //                     &:hover {
-        //                         background-color: transparent;
-        //                     }
-        //                 }
-        //                 & .arrowDown {
-        //                     border: none;
-        //                     margin-right: -8px;
-        //                     &:after {
-        //                         border-top-color: rgb($white, 90%);
-        //                     }
-        //                     &:hover {
-        //                         background-color: transparent;
-        //                     }
-        //                 }
-        //                 &:hover {
-        //                     background-color: transparent;
-        //                 }
-        //             }
-        //         }
-        //     }
-        //     & .flatpickr-innerContainer {
-        //         & .flatpickr-rContainer {
-        //             & .flatpickr-weekdays {
-        //                 & .flatpickr-weekdaycontainer {
-        //                     & .flatpickr-weekday {
-        //                         color: $theme1;
-        //                     }
-        //                 }
-        //             }
-        //             & .flatpickr-days {
-        //                 & .dayContainer {
-        //                     & .flatpickr-day {
-        //                         &.today{
-        //                             background-color: $theme1 !important;
-        //                             color: $white;
-        //                             border: none;
-        //                         }
-        //                         &.selected{
-        //                             background-color: transparent;
-        //                             border: 1px solid $theme1;
-        //                             color: $theme1;
-        //                         }
-        //                     }
-        //                 }
-        //             }
-        //         }
-        //     }
-        // }
         
     }
 
@@ -3245,22 +3030,37 @@
                         left: -12px;
                     }
                     & .playingStatus {
-                        & span {
-                            display: block;
+                        color: $success;
+                        &::before {
+                            content: '';
                             width: 8px;
                             height: 8px;
+                            display: block;
+                            border-radius: 50px;
+                            background-color: $success;
+                            margin-right: 5px;
+                            margin-bottom: 2px;
                         }
                         &.play {
-                            color: $success;
                             & span {
-                                background-color: $success;
+                                &:nth-child(1){
+                                    display: block;
+                                }
                             }
                         }
                         
-                        &.notPlay {
-                            color: $theme2;
+                        &.notplay {
+                            &::before {
+                                background-color: $theme2 !important;
+                            }
                             & span {
-                                background-color: $theme2;
+                                &:nth-child(1){
+                                    display: none;
+                                }
+                                &:nth-child(2){
+                                    color: $theme2;
+                                    display: block !important;
+                                }
                             }
                         }
                     }
@@ -3300,15 +3100,6 @@
                     }
                 }
             }
-            // & .otherPart{
-            //     border-radius: 0 0 6px 6px;
-            //     margin-top: -1px;
-            // }
-            // & .winStatus {
-            //     font-size: 12px;
-            //     border-radius: 0 0 6px 6px;
-            //     background-color: darken($info, 20);
-            // }
         }
     }
 
