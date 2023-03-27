@@ -1490,8 +1490,8 @@
             & .playersOuter{
                 & .teamDetail {
                     & .imgOuter {
-                        width: 40px;
-                        height: 40px;
+                        width: 35px;
+                        height: 35px;
                         & img {
                             object-fit: cover;
                             object-position: center top;
@@ -1736,6 +1736,38 @@
                     border-color: rgba($black, 0.8) !important;
                     // border-color: $black !important;
                     font-size: 12px;
+                }
+            }
+        }
+    }
+    .confermationModal {
+        & .modal-dialog {
+            & .modal-content {
+                & .modal-header {
+                    & .modal-title {
+                        & .balance {
+                            font-size: 12px;
+                        }
+                    }
+                    & button {
+                        width: 20px;
+                    }
+                }
+                & .modal-body {
+                    & .bonus {
+                        border-bottom: 1px solid $black;
+                    }
+                    & .leftEntery, & .prich {
+                        font-size: 14px;
+                    }
+                    & .payAmount {
+                        & .leftEntery, & .prich {
+                            color: lighten($success, 5);
+                        }
+                    }
+                    & .joinAddress {
+                        font-size: 10px;
+                    }
                 }
             }
         }
