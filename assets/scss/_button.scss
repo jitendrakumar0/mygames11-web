@@ -50,6 +50,9 @@
     font-size: 14px;
   }
   .bottomFixedBtn {
+    bottom: 10px;
+    left: 0;
+    right: 0;
     & .createBtn {
       min-width: 124px;
       z-index: 3;
@@ -66,7 +69,15 @@
         color: $white !important;
       }
     }
-    bottom: 10px;
+  }
+  .teamEdit {
+    width: 40px;
+    height: 40px;
+    background-color: $theme1;
+    left: 0;
+    right: 0;
+    bottom: 40px;
+    padding: 12px !important;
   }
 }
 
