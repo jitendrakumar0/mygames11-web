@@ -66,7 +66,7 @@
         <meta property="og:image:height" content="512">
 
         <!--  Title -->
-        <title>My Games 11 | Matche Details</title>
+        <title>My Games 11 | All Contests</title>
         <!-- Required meta tags -->
         <meta name="title" content="My Games11" />
         <meta name="description" content="description will be here" />
@@ -119,276 +119,28 @@
                 </navbar>
                 <div class="col-12 px-0 flex-fill" data-page-name="matcheDetailsPage" data-scrollbar>
                     <div class="row mainCenterPart mx-0 pb-3 h-100 flex-column flex-nowrap">
-                            <div class="col-12 px-0 bg-white verifyNav py-1 border-bottom border-bottom-1">
-                                <ul class="nav nav-pills navTabs row mx-0" id="pills-tab" role="tablist">
-                                    <li class="nav-item col px-0" role="presentation"><button class="nav-link rounded-0 bg-white text-muted w-100 fw-bold active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">Contests</button></li>
-                                    <li class="nav-item col px-0" role="presentation"><button class="nav-link rounded-0 bg-white text-muted w-100 fw-bold" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">My Contests(1)</button></li>
-                                    <li class="nav-item col px-0" role="presentation"><button class="nav-link rounded-0 bg-white text-muted w-100 fw-bold" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact" type="button" role="tab" aria-controls="pills-contact" aria-selected="false">My Teams(1)</button></li>
-                                </ul>
-                            </div>
                             <div class="col-12 flex-fill h-100 overflow-y-auto px-0">
-                                <div class="tab-content navContent h-100" id="pills-tabContent">
+                                <div class="navContent h-100" >
                                     <div class="tab-pane fade show active h-100 flex-fill" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab" tabindex="0">
                                         <div class="row flex-column mx-0 flex-nowrap h-100 position-relative">
-                                            <div class="col-12 px-0 row mx-0 topFilterBar bg-white">
-                                                <div class="col d-flex justify-content-center align-items-center gap-2 filterTabs privateLeague py-2 position-relative border-end border-end-1">
+                                            <div class="col-12 px-0 row mx-0 topFilterBar bg-white py-2 align-items-center">
+                                                <!-- <div class="col d-flex justify-content-center align-items-center gap-2 filterTabs privateLeague py-2 position-relative border-end border-end-1">
                                                     <a href="createContest.html" class="filterBtn fw-bold stretched-link text-muted">Private League </a>
                                                     <div class="additionImg rounded-circle bg-success d-flex"><svg width="192" height="192" class="w-100 h-100" viewBox="0 0 192 192" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M48 96H144" stroke="#fff" stroke-width="24"/><path d="M96 144L96 48" stroke="#fff" stroke-width="24"/></svg></div>
                                                 </div>
                                                 <div class="col d-flex justify-content-center align-items-center gap-2 filterTabs py-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
                                                     <div class="filterBtn fw-bold text-muted">Apply Filtter </div>
                                                     <div class="additionImg d-flex"><img src="assets/svg/icons/filtter_icon.svg" class="w-100" alt=""></div>
+                                                </div> -->
+                                                <div class="col-12 fs-14 fw-bold text-black mb-1">All Contests</div>
+                                                <div class="col fs-12 text-secondary fw-bold">40 Contests Available</div>
+                                                <div class="col-auto d-flex justify-content-center align-items-center gap-2 filterTabs py-2" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom" aria-controls="offcanvasBottom">
+                                                    <div class="filterBtn fw-bold text-muted fs-14">Apply Filtter </div>
+                                                    <div class="additionImg d-flex"><img src="assets/svg/icons/side_settings.png" class="w-100" alt=""></div>
                                                 </div>
                                             </div>
                                             <div class="col-12 innerBodyContentTab h-100 flex-fill overflow-y-auto">
-                                                <div class="row mx-0 g-3">
-                                                    <div class="col-12 px-0">
-                                                        <div class="row mx-0 pt-3">
-                                                            <div class="col-auto px-0"><div class="contestWarningImg"><img src="assets/svg/img/wins.png" class="h-100" alt=""></div></div>
-                                                            <div class="col"><div class="contestsType fw-bold text-black">Hot Contest</div><div class="contestWaining text-muted fw-semibold">Equal Winnings!!</div></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 px-0">
-                                                        <div class="card matchesCard position-relative overflow-hidden border border-1 border-light bg-white">
-                                                            <div class="card-body p-0">
-                                                                <div class="teamHeadline row mx-0 border-bottom border-bottom-1 border-bottom-light py-1 align-items-center">
-                                                                    <!-- <div class="col fw-semibold matchteams text-muted px-2"><span class="me-1">Guaranteed</span><img width="15" src="assets/svg/icons/check-circle.png" alt=""></div> -->
-                                                                    <div class="col-12 fw-semibold matchteams text-muted px-2 d-flex justify-content-end align-items-center"><img width="15" src="assets/svg/icons/starIcon.svg" alt=""></div>
-                                                                    <a href="contestWinnerLeaderBoard.html" class="stretched-link"></a>
-                                                                </div>
-                                                                <div class="innerBody firstMatchBody">
-                                                                    <div class="row mx0 align-items-center p-2">
-                                                                        <div class="col-auto leftSideTeams">
-                                                                            <div class="team">
-                                                                                <div class="teamName text-black fw-semibold">Prize Pool</div>
-                                                                                <div class="teamName text-black fw-bold fs-12">₹ 5000</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col px-0 matchTimer">
-                                                                            <div class="pichTime text-center fw-semibold text-black">Winners</div>
-                                                                            <div class="pichTime text-center fw-semibold text-black">5</div>
-                                                                        </div>
-                                                                        <div class="col-auto">
-                                                                            <button type="button" class="btn btn-success btnSuccess border-0 text-white fw-semibold position-relative z-1">₹ 550</button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row mx-0">
-                                                                        <div class="col-12 border-bottom px-0">
-                                                                            <div class="progress rounded-0 bg-light">
-                                                                                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                            </div>
-                                                                            <div class="d-flex align-items-center justify-content-between px-2 p-1">
-                                                                                <div class="fs-12 text-danger fw-semibold">999 teams left</div>
-                                                                                <div class="fs-12 fw-semibold">10 Teams</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-12 px-0 position-relative py-2">
-                                                                            <div class="enteryType fw-bold text-center fs-12">Single Entry</div>
-                                                                            <div class="position-absolute badges fs-12 text-white align-items-center d-flex gap-2">
-                                                                                <span class="badge badge1 bg-success rounded-2 align-items-center d-flex justify-content-center">S</span>
-                                                                                <div class="d-flex align-items-center borderBage">
-                                                                                    <span class="badge badge1 rounded-0 align-items-center d-flex justify-content-center">B</span>
-                                                                                    <span class="badge badge1 bg-white text-black rounded-0 rounded-end rounded-end-2 align-items-center d-flex justify-content-center px-3">5%</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 px-0">
-                                                        <div class="card matchesCard position-relative overflow-hidden border border-1 border-light bg-white">
-                                                            <div class="card-body p-0">
-                                                                <div class="teamHeadline row mx-0 border-bottom border-bottom-1 border-bottom-light py-1 align-items-center">
-                                                                    <!-- <div class="col fw-semibold matchteams text-muted px-2"><span class="me-1">Guaranteed</span><img width="15" src="assets/svg/icons/check-circle.png" alt=""></div> -->
-                                                                    <div class="col-12 fw-semibold matchteams text-muted px-2 d-flex justify-content-end align-items-center"><img width="15" src="assets/svg/icons/starIcon.svg" alt=""></div>
-                                                                    <a href="contestWinnerLeaderBoard.html" class="stretched-link"></a>
-                                                                </div>
-                                                                <div class="innerBody firstMatchBody">
-                                                                    <div class="row mx0 align-items-center p-2">
-                                                                        <div class="col-auto leftSideTeams">
-                                                                            <div class="team">
-                                                                                <div class="teamName text-black fw-semibold">Prize Pool</div>
-                                                                                <div class="teamName text-black fw-bold fs-12">₹ 1000</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col px-0 matchTimer">
-                                                                            <div class="pichTime text-center fw-semibold text-black">Winners</div>
-                                                                            <div class="pichTime text-center fw-semibold text-black">5</div>
-                                                                        </div>
-                                                                        <div class="col-auto">
-                                                                            <button type="button" class="btn btn-success btnSuccess border-0 text-white fw-semibold position-relative z-1">₹ 119</button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row mx-0">
-                                                                        <div class="col-12 border-bottom px-0">
-                                                                            <div class="progress rounded-0 bg-light">
-                                                                                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                            </div>
-                                                                            <div class="d-flex align-items-center justify-content-between px-2 p-1">
-                                                                                <div class="fs-12 text-danger fw-semibold">999 teams left</div>
-                                                                                <div class="fs-12 fw-semibold">10 Teams</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-12 px-0 position-relative py-2">
-                                                                            <div class="enteryType fw-bold text-center fs-12">Single Entry</div>
-                                                                            <div class="position-absolute badges fs-12 text-white align-items-center d-flex gap-2">
-                                                                                <span class="badge badge1 bg-success rounded-2 align-items-center d-flex justify-content-center">S</span>
-                                                                                <div class=" d-flex align-items-center borderBage">
-                                                                                    <span class="badge badge1 rounded-0 align-items-center d-flex justify-content-center">B</span>
-                                                                                    <span class="badge badge1 bg-white text-black rounded-0 rounded-end rounded-end-2 align-items-center d-flex justify-content-center px-3">5%</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 px-0">
-                                                        <div class="row mx-0 pt-2">
-                                                            <div class="col-auto px-0"><div class="contestWarningImg"><img src="assets/svg/img/wins.png" class="h-100" alt=""></div></div>
-                                                            <div class="col"><div class="contestsType fw-bold text-black">Hot Contest</div><div class="contestWaining text-muted fw-semibold">Equal Winnings!!</div></div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 px-0">
-                                                        <div class="card matchesCard position-relative overflow-hidden border border-1 border-light bg-white">
-                                                            <div class="card-body p-0">
-                                                                <div class="teamHeadline row mx-0 border-bottom border-bottom-1 border-bottom-light py-1 align-items-center">
-                                                                    <!-- <div class="col fw-semibold matchteams text-muted px-2"><span class="me-1">Guaranteed</span><img width="15" src="assets/svg/icons/check-circle.png" alt=""></div> -->
-                                                                    <div class="col-12 fw-semibold matchteams text-muted px-2 d-flex justify-content-end align-items-center"><img width="15" src="assets/svg/icons/starIcon.svg" alt=""></div>
-                                                                    <a href="contestWinnerLeaderBoard.html" class="stretched-link"></a>
-                                                                </div>
-                                                                <div class="innerBody firstMatchBody">
-                                                                    <div class="row mx0 align-items-center p-2">
-                                                                        <div class="col-auto leftSideTeams">
-                                                                            <div class="team">
-                                                                                <div class="teamName text-black fw-semibold">Prize Pool</div>
-                                                                                <div class="teamName text-black fw-bold fs-12">₹ 5000</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col px-0 matchTimer">
-                                                                            <div class="pichTime text-center fw-semibold text-black">Winners</div>
-                                                                            <div class="pichTime text-center fw-semibold text-black">5</div>
-                                                                        </div>
-                                                                        <div class="col-auto">
-                                                                            <button type="button" class="btn btn-success btnSuccess border-0 text-white fw-semibold position-relative z-1">₹ 550</button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row mx-0">
-                                                                        <div class="col-12 border-bottom px-0">
-                                                                            <div class="progress rounded-0 bg-light">
-                                                                                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                            </div>
-                                                                            <div class="d-flex align-items-center justify-content-between px-2 p-1">
-                                                                                <div class="fs-12 text-danger fw-semibold">999 teams left</div>
-                                                                                <div class="fs-12 fw-semibold">10 Teams</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-12 px-0 position-relative py-2">
-                                                                            <div class="enteryType fw-bold text-center fs-12">Single Entry</div>
-                                                                            <div class="position-absolute badges fs-12 text-white align-items-center d-flex gap-2">
-                                                                                <span class="badge badge1 bg-success rounded-2 align-items-center d-flex justify-content-center">S</span>
-                                                                                <div class="d-flex align-items-center borderBage">
-                                                                                    <span class="badge badge1 rounded-0 align-items-center d-flex justify-content-center">B</span>
-                                                                                    <span class="badge badge1 bg-white text-black rounded-0 rounded-end rounded-end-2 align-items-center d-flex justify-content-center px-3">5%</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-12 px-0">
-                                                        <div class="card matchesCard position-relative overflow-hidden border border-1 border-light bg-white">
-                                                            <div class="card-body p-0">
-                                                                <div class="teamHeadline row mx-0 border-bottom border-bottom-1 border-bottom-light py-1 align-items-center">
-                                                                    <!-- <div class="col fw-semibold matchteams text-muted px-2"><span class="me-1">Guaranteed</span><img width="15" src="assets/svg/icons/check-circle.png" alt=""></div> -->
-                                                                    <div class="col-12 fw-semibold matchteams text-muted px-2 d-flex justify-content-end align-items-center"><img width="15" src="assets/svg/icons/starIcon.svg" alt=""></div>
-                                                                    <a href="contestWinnerLeaderBoard.html" class="stretched-link"></a>
-                                                                </div>
-                                                                <div class="innerBody firstMatchBody">
-                                                                    <div class="row mx0 align-items-center p-2">
-                                                                        <div class="col-auto leftSideTeams">
-                                                                            <div class="team">
-                                                                                <div class="teamName text-black fw-semibold">Prize Pool</div>
-                                                                                <div class="teamName text-black fw-bold fs-12">₹ 1000</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col px-0 matchTimer">
-                                                                            <div class="pichTime text-center fw-semibold text-black">Winners</div>
-                                                                            <div class="pichTime text-center fw-semibold text-black">5</div>
-                                                                        </div>
-                                                                        <div class="col-auto">
-                                                                            <button type="button" class="btn btn-success btnSuccess border-0 text-white fw-semibold position-relative z-1">₹ 119</button>
-                                                                        </div>
-                                                                    </div>
-                                                                    <div class="row mx-0">
-                                                                        <div class="col-12 border-bottom px-0">
-                                                                            <div class="progress rounded-0 bg-light">
-                                                                                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-                                                                            </div>
-                                                                            <div class="d-flex align-items-center justify-content-between px-2 p-1">
-                                                                                <div class="fs-12 text-danger fw-semibold">999 teams left</div>
-                                                                                <div class="fs-12 fw-semibold">10 Teams</div>
-                                                                            </div>
-                                                                        </div>
-                                                                        <div class="col-12 px-0 position-relative py-2">
-                                                                            <div class="enteryType fw-bold text-center fs-12">Single Entry</div>
-                                                                            <div class="position-absolute badges fs-12 text-white align-items-center d-flex gap-2">
-                                                                                <span class="badge badge1 bg-success rounded-2 align-items-center d-flex justify-content-center">S</span>
-                                                                                <div class=" d-flex align-items-center borderBage">
-                                                                                    <span class="badge badge1 rounded-0 align-items-center d-flex justify-content-center">B</span>
-                                                                                    <span class="badge badge1 bg-white text-black rounded-0 rounded-end rounded-end-2 align-items-center d-flex justify-content-center px-3">5%</span>
-                                                                                </div>
-                                                                            </div>
-                                                                        </div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 bg-transprient d-flex justify-content-center align-items-center bg-transparent text-center fixed-bottom bottomFixedBtn z-3"><a href="createYourTeam.html" class="createBtn rounded-3 fw-semibold bg-white position-relative z-3">Create Team</a></div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade h-100" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab" tabindex="0">
-                                        <div class="row mx-0 h-100 flex-column flex-nowrap innerBodyContentTab">
-                                            <div class="col-12 px-0 cricketheader bg-white z-2 ">
-                                                <div class="card matchesCard overflow-hidden border border-1 border-light bg-white">
-                                                    <div class="card-body p-0">
-                                                        <div class="teamHeadline row align-items-center">
-                                                            <div class="col fw-semibold matchteams text-mutedb py-1 text-center mx-5 border-bottom borderlight ">European Cricket League  T10</div>
-                                                        </div>
-                                                        <div class="innerBody firstMatchBody py-2">
-                                                            <div class="row align-items-center mx-0">
-                                                                <div class="col-auto leftSideTeams px-2">
-                                                                <div class="firstTeamsName text-black fw-bold">CIYMS</div>
-                                                                    <div class="team d-flex align-items-center mt-2">
-                                                                        <div class="teamLogo position-relative rounded-circle border border-1 border-black d-flex justify-content-center align-items-center"><img src="assets/svg/img/team1.png" class="w-100" alt=""></div>
-                                                                        <div class="teamName text-uppercase text-black fw-bold ms-2">CYS</div>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col px-0 matchTimer">
-                                                                    <div class="pichTime text-center fw-semibold ">00h:50m:03s</div>
-                                                                </div>
-                                                                <div class="col-auto rightSideTeams px-2">
-                                                                    <div class="firstTeamsName text-black text-end fw-bold">Ariana AKIF</div>
-                                                                    <div class="team d-flex align-items-center mt-2">
-                                                                        <div class="teamName text-uppercase text-black fw-bold me-2">AF</div>
-                                                                        <div class="teamLogo position-relative rounded-circle border border-1 border-black d-flex justify-content-center align-items-center"><img src="assets/svg/img/team2.png" class="w-100" alt=""></div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 flex-fill h-100 overflow-y-auto mt-3">
-                                                <div class="row g-3 mx-0">
+                                                <div class="row mx-0 g-3 py-3">
                                                     <div class="col-12 px-0">
                                                         <div class="card matchesCard position-relative overflow-hidden border border-1 border-light bg-white">
                                                             <div class="card-body p-0">
@@ -402,15 +154,15 @@
                                                                         <div class="col-auto leftSideTeams">
                                                                             <div class="team">
                                                                                 <div class="teamName text-black fw-semibold">Prize Pool</div>
-                                                                                <div class="teamName text-black fw-bold fs-12">Practice Contest</div>
+                                                                                <div class="teamName text-black fw-bold fs-12">₹ 5000</div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col px-0 matchTimer">
                                                                             <div class="pichTime text-center fw-semibold text-black">Winners</div>
-                                                                            <div class="pichTime text-center fw-semibold text-black">1</div>
+                                                                            <div class="pichTime text-center fw-semibold text-black">5</div>
                                                                         </div>
                                                                         <div class="col-auto">
-                                                                            <button type="button" class="btn btn-success btnSuccess border-0 text-white fw-semibold position-relative z-1">Invite</button>
+                                                                            <button type="button" class="btn btn-success btnSuccess border-0 text-white fw-semibold position-relative z-1">₹ 550</button>
                                                                         </div>
                                                                     </div>
                                                                     <div class="row mx-0">
@@ -419,18 +171,165 @@
                                                                                 <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                                                                             </div>
                                                                             <div class="d-flex align-items-center justify-content-between px-2 p-1">
-                                                                                <div class="fs-12 text-danger fw-semibold">1 teams left</div>
-                                                                                <div class="fs-12 fw-semibold">2 Teams</div>
+                                                                                <div class="fs-12 text-danger fw-semibold">999 teams left</div>
+                                                                                <div class="fs-12 fw-semibold">10 Teams</div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="col-12 px-0 position-relative py-2">
                                                                             <div class="enteryType fw-bold text-center fs-12">Single Entry</div>
                                                                             <div class="position-absolute badges fs-12 text-white align-items-center d-flex gap-2">
                                                                                 <span class="badge badge1 bg-success rounded-2 align-items-center d-flex justify-content-center">S</span>
-                                                                                <!-- <div class="d-flex align-items-center borderBage">
+                                                                                <div class="d-flex align-items-center borderBage">
                                                                                     <span class="badge badge1 rounded-0 align-items-center d-flex justify-content-center">B</span>
                                                                                     <span class="badge badge1 bg-white text-black rounded-0 rounded-end rounded-end-2 align-items-center d-flex justify-content-center px-3">5%</span>
-                                                                                </div> -->
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 px-0">
+                                                        <div class="card matchesCard position-relative overflow-hidden border border-1 border-light bg-white">
+                                                            <div class="card-body p-0">
+                                                                <div class="teamHeadline row mx-0 border-bottom border-bottom-1 border-bottom-light py-1 align-items-center">
+                                                                    <!-- <div class="col fw-semibold matchteams text-muted px-2"><span class="me-1">Guaranteed</span><img width="15" src="assets/svg/icons/check-circle.png" alt=""></div> -->
+                                                                    <div class="col-12 fw-semibold matchteams text-muted px-2 d-flex justify-content-end align-items-center"><img width="15" src="assets/svg/icons/starIcon.svg" alt=""></div>
+                                                                    <a href="javascript:;" class="stretched-link"></a>
+                                                                </div>
+                                                                <div class="innerBody firstMatchBody">
+                                                                    <div class="row mx0 align-items-center p-2">
+                                                                        <div class="col-auto leftSideTeams">
+                                                                            <div class="team">
+                                                                                <div class="teamName text-black fw-semibold">Prize Pool</div>
+                                                                                <div class="teamName text-black fw-bold fs-12">₹ 1000</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col px-0 matchTimer">
+                                                                            <div class="pichTime text-center fw-semibold text-black">Winners</div>
+                                                                            <div class="pichTime text-center fw-semibold text-black">5</div>
+                                                                        </div>
+                                                                        <div class="col-auto">
+                                                                            <button type="button" class="btn btn-success btnSuccess border-0 text-white fw-semibold position-relative z-1">₹ 119</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-12 border-bottom px-0">
+                                                                            <div class="progress rounded-0 bg-light">
+                                                                                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                            </div>
+                                                                            <div class="d-flex align-items-center justify-content-between px-2 p-1">
+                                                                                <div class="fs-12 text-danger fw-semibold">999 teams left</div>
+                                                                                <div class="fs-12 fw-semibold">10 Teams</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 px-0 position-relative py-2">
+                                                                            <div class="enteryType fw-bold text-center fs-12">Single Entry</div>
+                                                                            <div class="position-absolute badges fs-12 text-white align-items-center d-flex gap-2">
+                                                                                <span class="badge badge1 bg-success rounded-2 align-items-center d-flex justify-content-center">S</span>
+                                                                                <div class=" d-flex align-items-center borderBage">
+                                                                                    <span class="badge badge1 rounded-0 align-items-center d-flex justify-content-center">B</span>
+                                                                                    <span class="badge badge1 bg-white text-black rounded-0 rounded-end rounded-end-2 align-items-center d-flex justify-content-center px-3">5%</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 px-0">
+                                                        <div class="card matchesCard position-relative overflow-hidden border border-1 border-light bg-white">
+                                                            <div class="card-body p-0">
+                                                                <div class="teamHeadline row mx-0 border-bottom border-bottom-1 border-bottom-light py-1 align-items-center">
+                                                                    <!-- <div class="col fw-semibold matchteams text-muted px-2"><span class="me-1">Guaranteed</span><img width="15" src="assets/svg/icons/check-circle.png" alt=""></div> -->
+                                                                    <div class="col-12 fw-semibold matchteams text-muted px-2 d-flex justify-content-end align-items-center"><img width="15" src="assets/svg/icons/starIcon.svg" alt=""></div>
+                                                                    <a href="javascript:;" class="stretched-link"></a>
+                                                                </div>
+                                                                <div class="innerBody firstMatchBody">
+                                                                    <div class="row mx0 align-items-center p-2">
+                                                                        <div class="col-auto leftSideTeams">
+                                                                            <div class="team">
+                                                                                <div class="teamName text-black fw-semibold">Prize Pool</div>
+                                                                                <div class="teamName text-black fw-bold fs-12">₹ 5000</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col px-0 matchTimer">
+                                                                            <div class="pichTime text-center fw-semibold text-black">Winners</div>
+                                                                            <div class="pichTime text-center fw-semibold text-black">5</div>
+                                                                        </div>
+                                                                        <div class="col-auto">
+                                                                            <button type="button" class="btn btn-success btnSuccess border-0 text-white fw-semibold position-relative z-1">₹ 550</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-12 border-bottom px-0">
+                                                                            <div class="progress rounded-0 bg-light">
+                                                                                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                            </div>
+                                                                            <div class="d-flex align-items-center justify-content-between px-2 p-1">
+                                                                                <div class="fs-12 text-danger fw-semibold">999 teams left</div>
+                                                                                <div class="fs-12 fw-semibold">10 Teams</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 px-0 position-relative py-2">
+                                                                            <div class="enteryType fw-bold text-center fs-12">Single Entry</div>
+                                                                            <div class="position-absolute badges fs-12 text-white align-items-center d-flex gap-2">
+                                                                                <span class="badge badge1 bg-success rounded-2 align-items-center d-flex justify-content-center">S</span>
+                                                                                <div class="d-flex align-items-center borderBage">
+                                                                                    <span class="badge badge1 rounded-0 align-items-center d-flex justify-content-center">B</span>
+                                                                                    <span class="badge badge1 bg-white text-black rounded-0 rounded-end rounded-end-2 align-items-center d-flex justify-content-center px-3">5%</span>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="col-12 px-0">
+                                                        <div class="card matchesCard position-relative overflow-hidden border border-1 border-light bg-white">
+                                                            <div class="card-body p-0">
+                                                                <div class="teamHeadline row mx-0 border-bottom border-bottom-1 border-bottom-light py-1 align-items-center">
+                                                                    <!-- <div class="col fw-semibold matchteams text-muted px-2"><span class="me-1">Guaranteed</span><img width="15" src="assets/svg/icons/check-circle.png" alt=""></div> -->
+                                                                    <div class="col-12 fw-semibold matchteams text-muted px-2 d-flex justify-content-end align-items-center"><img width="15" src="assets/svg/icons/starIcon.svg" alt=""></div>
+                                                                    <a href="javascript:;" class="stretched-link"></a>
+                                                                </div>
+                                                                <div class="innerBody firstMatchBody">
+                                                                    <div class="row mx0 align-items-center p-2">
+                                                                        <div class="col-auto leftSideTeams">
+                                                                            <div class="team">
+                                                                                <div class="teamName text-black fw-semibold">Prize Pool</div>
+                                                                                <div class="teamName text-black fw-bold fs-12">₹ 1000</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col px-0 matchTimer">
+                                                                            <div class="pichTime text-center fw-semibold text-black">Winners</div>
+                                                                            <div class="pichTime text-center fw-semibold text-black">5</div>
+                                                                        </div>
+                                                                        <div class="col-auto">
+                                                                            <button type="button" class="btn btn-success btnSuccess border-0 text-white fw-semibold position-relative z-1">₹ 119</button>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="row mx-0">
+                                                                        <div class="col-12 border-bottom px-0">
+                                                                            <div class="progress rounded-0 bg-light">
+                                                                                <div class="progress-bar" role="progressbar" aria-label="Basic example" style="width: 0%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+                                                                            </div>
+                                                                            <div class="d-flex align-items-center justify-content-between px-2 p-1">
+                                                                                <div class="fs-12 text-danger fw-semibold">999 teams left</div>
+                                                                                <div class="fs-12 fw-semibold">10 Teams</div>
+                                                                            </div>
+                                                                        </div>
+                                                                        <div class="col-12 px-0 position-relative py-2">
+                                                                            <div class="enteryType fw-bold text-center fs-12">Single Entry</div>
+                                                                            <div class="position-absolute badges fs-12 text-white align-items-center d-flex gap-2">
+                                                                                <span class="badge badge1 bg-success rounded-2 align-items-center d-flex justify-content-center">S</span>
+                                                                                <div class=" d-flex align-items-center borderBage">
+                                                                                    <span class="badge badge1 rounded-0 align-items-center d-flex justify-content-center">B</span>
+                                                                                    <span class="badge badge1 bg-white text-black rounded-0 rounded-end rounded-end-2 align-items-center d-flex justify-content-center px-3">5%</span>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
@@ -440,73 +339,7 @@
                                                     </div>
                                                 </div>
                                             </div>
-                                        </div>
-                                    </div>
-                                    <div class="tab-pane fade h-100" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab" tabindex="0">
-                                        <div class="row mx-0 pt-3 innerBodyContentTab chooseYourTeamMain gap-3 h-100 position-relative">
-                                            <div class="col-12">
-                                                <div class="card teams rounded-3 border border-opacity-100 border-2 bg-white overflow-hidden">
-                                                    <div class="card-header py-1 bg-white border-bottom">
-                                                        <div class="row align-items-center mx-0">
-                                                            <div class="col px-0">
-                                                                <div class="fs-12">John (1)</div>
-                                                            </div>
-                                                            <div class="col-auto px-0">
-                                                                <div class="buttons d-flex align-items-center gap-3">
-                                                                    <a href="createYourTeam.html" class="viewTeam d-flex align-items-center"><img class="w-100" src="assets/svg/icons/ic_edit.png" alt=""></a>
-                                                                    <a href="teamView.html" class="viewTeam d-flex align-items-center"><img class="w-100" src="assets/svg/icons/ic_copy.png" alt=""></a>
-                                                                
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <div class="card-body px-0 pb-0">
-                                                        <div class="row align-items-center">
-                                                            <div class="col-auto d-flex align-items-center">
-                                                                <div class="caption text-center text-white fs-12">C</div>
-                                                                <div class="imgOuter">
-                                                                    <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col text-center">
-                                                                <div class="fs-10 fw-bold">CYS-W: 7</div>
-                                                                <div class="fs-10 fw-bold">AF-W: 4</div>
-                                                            </div>
-                                                            <div class="col-auto d-flex align-items-center">
-                                                                <div class="caption vCaption text-center text-white fs-12 order-2">VC</div>
-                                                                <div class="imgOuter order-1">
-                                                                    <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
-                                                                </div>
-                                                            </div>
-                                                            <div class="col-12 bg-secondary p-1 d-flex justify-content-between text-white">
-                                                                <div class="captionName fs-12 px-4">John Doe</div>
-                                                                <div class="captionName fs-12 px-4">John Doe2</div>
-                                                            </div>
-                                                            <div class="col-12 py-2">
-                                                                <div class="row mx-0">
-                                                                    <div class="col px-0 teamDivide text-center">
-                                                                        <div class="fs-10 fw-bold">Wicket Keeper</div>
-                                                                        <div class="fs-10 fw-bold">1</div>
-                                                                    </div>
-                                                                    <div class="col px-0 teamDivide border-start text-center">
-                                                                        <div class="fs-10 fw-bold">Batsman</div>
-                                                                        <div class="fs-10 fw-bold">5</div>
-                                                                    </div>
-                                                                    <div class="col px-0 teamDivide border-start text-center">
-                                                                        <div class="fs-10 fw-bold">All Rounder</div>
-                                                                        <div class="fs-10 fw-bold">2</div>
-                                                                    </div>
-                                                                    <div class="col px-0 teamDivide border-start text-center">
-                                                                        <div class="fs-10 fw-bold">Bowler</div>
-                                                                        <div class="fs-10 fw-bold">3</div>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 bg-transprient d-flex justify-content-center align-items-center bg-transparent text-center fixed-bottom bottomFixedBtn z-3"><a href="createYourTeam.html" class="createBtn rounded-3 fw-semibold bg-white position-relative z-3">Create Team 2</a></div>
+                                            <!-- <div class="col-12 bg-transprient d-flex justify-content-center align-items-center bg-transparent text-center fixed-bottom bottomFixedBtn z-3"><a href="createYourTeam.html" class="createBtn rounded-3 fw-semibold bg-white position-relative z-3">Create Team</a></div> -->
                                         </div>
                                     </div>
                                 </div>
@@ -628,7 +461,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-12 bg-transprient d-flex justify-content-center align-items-center bg-transparent text-center fixed-bottom bottomFixedBtn z-3"><a href="allContests.html" type="button" class="btn btn-sm px-4 footerBtn btn-success text-white">Apply</a></div>
+                        <div class="col-12 bg-transprient d-flex justify-content-center align-items-center bg-transparent text-center fixed-bottom bottomFixedBtn z-3"><button type="button" class="btn btn-sm px-4 footerBtn btn-success text-white">Apply</button></div>
                     </form>
                 </div>
                 </div>
