@@ -1975,6 +1975,31 @@
                 margin: auto;
             }
         }
+
+
+        // *accordion Scorcard
+        .scorecardAccordion {
+            & .accordion {
+                & .accordion-item {
+                    & .accordion-header {
+                        & .accordion-button {
+                            background-color: $theme1;
+                            color: $white !important;
+                            &::after{
+                                filter: brightness(100);
+                            }
+                            &.collapsed {
+                                color: $black !important;
+                                background-color: $white;
+                                &::after{
+                                    filter: brightness(0);
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`

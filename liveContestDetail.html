@@ -176,7 +176,7 @@
                                                     </li>
                                                     <li class="nav-item col px-0" role="presentation">
                                                         <button class="nav-link py-3 rounded-0 text-black w-100 border-0" id="playerStatus-tab" data-bs-toggle="pill" data-bs-target="#playerStatus" type="button" role="tab" aria-controls="playerStatus" aria-selected="false">
-                                                            <span class="gamesheading pt1 d-flex justify-content-center">Player Status</span>
+                                                            <span class="gamesheading pt1 d-flex justify-content-center">Scorecard</span>
                                                         </button>
                                                     </li>
                                                 </ul>
@@ -187,10 +187,10 @@
                             </div>
                         </div>
                         <div class="col-12 flex-fill h-100 overflow-y-auto">
-                            <div class="row py-3">
+                            <div class="row pb-3">
                                 <div class="col-12">
                                     <div class="tab-content tabContents h-100" id="pills-tabContent">
-                                        <div class="tab-pane fade h-100 show active" id="myContests" role="tabpanel" aria-labelledby="myContests-tab" tabindex="0">
+                                        <div class="tab-pane fade h-100 pt-3 show active" id="myContests" role="tabpanel" aria-labelledby="myContests-tab" tabindex="0">
                                             <div class="row h-100">
                                                 <div class="col-12 upcomingMatches">
                                                     <div class="row gap-3">
@@ -294,7 +294,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                        <div class="tab-pane fade h-100" id="myTeams" role="tabpanel" aria-labelledby="myTeams-tab" tabindex="0">
+                                        <div class="tab-pane fade h-100 pt-3" id="myTeams" role="tabpanel" aria-labelledby="myTeams-tab" tabindex="0">
                                             <div class="row chooseYourTeamMain">
                                                 <div class="col-12">
                                                     <div class="card teams rounded-4 border border-opacity-100  bg-white overflow-hidden">
@@ -358,15 +358,485 @@
                                         </div>
                                         <div class="tab-pane fade h-100" id="playerStatus" role="tabpanel" aria-labelledby="playerStatus-tab" tabindex="0">
                                             <div class="row h-100">
-                                                <div class="col-12 px-0">
-                                                    <table class="table border-0 mb-0">
+                                                <div class="col-12 px-0 scorecardAccordion">
+                                                    <div class="accordion accordion-flush border-top border-1" id="accordionFlushExample">
+                                                        <div class="accordion-item">
+                                                        <h2 class="accordion-header"><button class="accordion-button fs-12 fw-bold text-black shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">West Indies Inning <br> 220/8 (20 ov)</button></h2>
+                                                            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                                <div class="accordion-body p-0">
+                                                                    <table class="table border-0 mb-0">
+                                                                        <thead class="bg-info-subtle align-middle bg-opacity-50 text-black fs-12">
+                                                                            <tr>
+                                                                                <th scope="col" class="text-start fw-bold">Batting</th>
+                                                                                <th scope="col" class="text-center fw-bold">R</th>
+                                                                                <th scope="col" class="text-center fw-bold">B</th>
+                                                                                <th scope="col" class="text-center fw-bold">4s</th>
+                                                                                <th scope="col" class="text-center fw-bold">4s</th>
+                                                                                <th scope="col" class="text-center fw-bold">4s</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="text-center">
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">Extras</div>
+                                                                                </td>
+                                                                                <td colspan="5" class="border-bottom"><div class="fs-12">11     b 0, 1b 3, w 6, nb 2, p 0</div></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <div class="my-4 px-2">
+                                                                        <div class="fs-12 text-black fw-bold">Yet to bat</div>
+                                                                        <div class="fs-12 text-secondary fw-bold">Sheldon Conttrell</div>
+                                                                    </div>
+                                                                    <table class="table border-0 mb-0">
+                                                                        <thead class="bg-info-subtle align-middle bg-opacity-50 text-black fs-12">
+                                                                            <tr>
+                                                                                <th scope="col" class="text-start fw-bold">Bowler</th>
+                                                                                <th scope="col" class="text-center fw-bold">O</th>
+                                                                                <th scope="col" class="text-center fw-bold">M</th>
+                                                                                <th scope="col" class="text-center fw-bold">R</th>
+                                                                                <th scope="col" class="text-center fw-bold">W</th>
+                                                                                <th scope="col" class="text-center fw-bold">ER</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="text-center">
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Bjorn Fortuin</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">2</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">22</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">11.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Bjorn Fortuin</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">2</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">22</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">11.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Bjorn Fortuin</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">2</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">22</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">11.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Bjorn Fortuin</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">2</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">22</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">11.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Bjorn Fortuin</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">2</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">22</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">11.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Bjorn Fortuin</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">2</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">22</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">11.00</div></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+
+                                                                    <table class="table border-0 mb-0 mt-4">
+                                                                        <thead class="bg-info-subtle align-middle bg-opacity-50 text-black fs-12">
+                                                                            <tr>
+                                                                                <th scope="col" class="text-start fw-bold">Full Of Wickets</th>
+                                                                                <th scope="col" class="text-center fw-bold">Score</th>
+                                                                                <th scope="col" class="text-center fw-bold">Over</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="text-center">
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="accordion-item">
+                                                            <h2 class="accordion-header"><button class="accordion-button fs-12 fw-bold text-black shadow-none collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">South Africa Inning <br>213/6 (20 ov)</button></h2>
+                                                            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                                                                <div class="accordion-body p-0">
+                                                                    <table class="table border-0 mb-0">
+                                                                        <thead class="bg-info-subtle align-middle bg-opacity-50 text-black fs-12">
+                                                                            <tr>
+                                                                                <th scope="col" class="text-start fw-bold">Batting</th>
+                                                                                <th scope="col" class="text-center fw-bold">R</th>
+                                                                                <th scope="col" class="text-center fw-bold">B</th>
+                                                                                <th scope="col" class="text-center fw-bold">4s</th>
+                                                                                <th scope="col" class="text-center fw-bold">4s</th>
+                                                                                <th scope="col" class="text-center fw-bold">4s</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="text-center">
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">My Team (1)</div>
+                                                                                    <div class="teamName text-black fs-10">b Anrich Nortje</div>
+                                                                                </td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">36</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">25</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">4</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">2</div></td>
+                                                                                <td class="border-bottom"><div class="fs-12 fw-bold text-secondary">144.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start">
+                                                                                    <div class="teamName text-black fs-12 fw-bold">Extras</div>
+                                                                                </td>
+                                                                                <td colspan="5" class="border-bottom"><div class="fs-12">11     b 0, 1b 3, w 6, nb 2, p 0</div></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+                                                                    <div class="my-4 px-2">
+                                                                        <div class="fs-12 text-black fw-bold">Yet to bat</div>
+                                                                        <div class="fs-12 text-secondary fw-bold">Sheldon Conttrell</div>
+                                                                    </div>
+                                                                    <table class="table border-0 mb-0">
+                                                                        <thead class="bg-info-subtle align-middle bg-opacity-50 text-black fs-12">
+                                                                            <tr>
+                                                                                <th scope="col" class="text-start fw-bold">Bowler</th>
+                                                                                <th scope="col" class="text-center fw-bold">O</th>
+                                                                                <th scope="col" class="text-center fw-bold">M</th>
+                                                                                <th scope="col" class="text-center fw-bold">R</th>
+                                                                                <th scope="col" class="text-center fw-bold">W</th>
+                                                                                <th scope="col" class="text-center fw-bold">ER</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="text-center">
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Bjorn Fortuin</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">2</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">22</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">11.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Bjorn Fortuin</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">2</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">22</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">11.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Bjorn Fortuin</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">2</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">22</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">11.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Bjorn Fortuin</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">2</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">22</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">11.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Bjorn Fortuin</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">2</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">22</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">11.00</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Bjorn Fortuin</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">2</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">22</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">0</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">11.00</div></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+
+                                                                    <table class="table border-0 mb-0 mt-4">
+                                                                        <thead class="bg-info-subtle align-middle bg-opacity-50 text-black fs-12">
+                                                                            <tr>
+                                                                                <th scope="col" class="text-start fw-bold">Full Of Wickets</th>
+                                                                                <th scope="col" class="text-center fw-bold">Score</th>
+                                                                                <th scope="col" class="text-center fw-bold">Over</th>
+                                                                            </tr>
+                                                                        </thead>
+                                                                        <tbody class="text-center">
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                            <tr class="position-relative">
+                                                                                <td class="border-bottom text-start"><div class="teamName text-black fs-12 fw-bold">Kyle Mayers</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">17-10</div></td>
+                                                                                <td class="border-bottom text-secondary fw-bold"><div class="fs-12">3.2</div></td>
+                                                                            </tr>
+                                                                        </tbody>
+                                                                    </table>
+
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <!-- <table class="table border-0 mb-0">
                                                         <thead class="bg-secondary bg-opacity-75 text-white fs-12">
-                                                          <tr>
-                                                            <th scope="col" class="d-flex gap-2">Player</th>
-                                                            <th scope="col" class="text-center">Type</th>
-                                                            <th scope="col" class="text-center">Team</th>
-                                                            <th scope="col" class="text-center">Points</th>
-                                                          </tr>
+                                                            <tr>
+                                                                <th scope="col" class="d-flex gap-2">Player</th>
+                                                                <th scope="col" class="text-center">Type</th>
+                                                                <th scope="col" class="text-center">Team</th>
+                                                                <th scope="col" class="text-center">Points</th>
+                                                            </tr>
                                                         </thead>
                                                         <tbody>
                                                             <tr class="position-relative">
@@ -850,7 +1320,7 @@
                                                             </td>
                                                             </tr>
                                                         </tbody>
-                                                      </table>
+                                                    </table> -->
                                                 </div>
                                             </div>
                                         </div>
