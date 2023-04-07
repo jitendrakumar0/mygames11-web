@@ -598,15 +598,23 @@
         background-color: $gray-200;
         & .mainCenterPart {
             & .transectionCard {
+                &.moneyDebit {
+                    & .card-body {
+                        & .additionImag {
+                            border-color: $danger;
+                        }
+                        & .transactionBonus {
+                            color: $danger;
+                        }
+                        & .transactionId {
+                        }
+                    }
+                }
                 & .card-body {
                     & .additionImag {
                         width: 18px;
                         height: 18px;
-                        // border: 2px solid darken($success, 15);
                         border: 2px solid $success;
-                        &.nagetiveImg {
-                            border-color: $danger;
-                        }
                     }
                     & .transactionBonus {
                         font-size: 12px;
