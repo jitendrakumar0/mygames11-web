@@ -506,7 +506,7 @@
                             </div>
                         </div>
                         <div class="col-12 bg-transprient d-flex justify-content-around align-items-center bg-transparent text-center fixed-bottom bottomFixedBtn">
-                            <a href="teamView.html" class="createBtn createTeam rounded-3 fw-semibold bg-white">Team Preview</a>
+                            <a role="button" class="createBtn createTeam rounded-3 fw-semibold bg-white"  data-bs-toggle="modal" data-bs-target="#selectedCaption">Team Preview</a>
                             <a href="javascript:;" class="createBtn createTeam rounded-3 fw-semibold bg-white continueFill" data-bs-toggle="modal" data-bs-target="#exampleModal">Continue</a>
                         </div>
                     </div>
@@ -546,6 +546,155 @@
                             <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                             <button type="button" class="btn btn-primary">Save changes</button> -->
                             <button class="invite btn btn-success px-5 text-white btn-sm fs-6">JOIN CONTEST</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Modal -->
+                <div class="modal fade selectedPlayer p-0" id="selectedCaption" tabindex="-1" aria-labelledby="selectedCaptionLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-fullscreen">
+                    <div class="modal-content border-0 h100">
+                        <div class="modal-body p-0">
+                            <div class="row h-100 mainCenterPart mx-0">
+                                <div class="col-12 bgImg">
+                                    <div class="row">
+                                        <div class="col-12 d-flex align-items-center justify-content-between py-2 bg-dark bg-opacity-25">
+                                            <h1 class="modal-title fs-12 text-white" id="selectedCaptionLabel">Player</h1>
+                                            <div class="logo">
+                                                <img src="assets/svg/logos/logoWhite.png" alt="" class="w-100">
+                                            </div>
+                                            <button type="button" class="btn-close fs-12 text-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row p-4 justify-content-around">
+                                                <div class="col-12">
+                                                    <div class="fs-12 text-white text-center mb-2">Wicket-Keeper</div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="plyerOuter position-relative text-center">
+                                                        <div class="img mx-auto">
+                                                            <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
+                                                        </div>
+                                                        <div class="player fs-12"><span class="name text-black bg-light rounded-1 d-block">Player 1</span><span class="text-white">8Cr</span></div>
+                                                        <a href="javascript:;" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="plyerOuter position-relative text-center">
+                                                        <div class="img mx-auto">
+                                                            <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
+                                                        </div>
+                                                        <div class="player fs-12"><span class="name text-black bg-light rounded-1 d-block">Player 1</span><span class="text-white">8Cr</span></div>
+                                                        <a href="javascript:;" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="plyerOuter position-relative text-center caption">
+                                                        <div class="img mx-auto">
+                                                            <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
+                                                        </div>
+                                                        <div class="player fs-12"><span class="name text-black bg-light rounded-1 d-block">Player 1</span><span class="text-white">8Cr</span></div>
+                                                        <a href="javascript:;" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="plyerOuter position-relative text-center vCaption">
+                                                        <div class="img mx-auto">
+                                                            <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
+                                                        </div>
+                                                        <div class="player fs-12"><span class="name text-black bg-light rounded-1 d-block">Player 1</span><span class="text-white">8Cr</span></div>
+                                                        <a href="javascript:;" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row p-4 justify-content-around">
+                                                <div class="col-12">
+                                                    <div class="fs-12 text-white text-center mb-2">Batsmen</div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="plyerOuter position-relative text-center">
+                                                        <div class="img mx-auto">
+                                                            <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
+                                                        </div>
+                                                        <div class="player fs-12"><span class="name text-black bg-light rounded-1 d-block">Player 1</span><span class="text-white">8Cr</span></div>
+                                                        <a href="javascript:;" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="plyerOuter position-relative text-center">
+                                                        <div class="img mx-auto">
+                                                            <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
+                                                        </div>
+                                                        <div class="player fs-12"><span class="name text-black bg-light rounded-1 d-block">Player 1</span><span class="text-white">8Cr</span></div>
+                                                        <a href="javascript:;" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row p-4 justify-content-around">
+                                                <div class="col-12">
+                                                    <div class="fs-12 text-white text-center mb-2">All-Rounders</div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="plyerOuter position-relative text-center">
+                                                        <div class="img mx-auto">
+                                                            <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
+                                                        </div>
+                                                        <div class="player fs-12"><span class="name text-black bg-light rounded-1 d-block">Player 1</span><span class="text-white">8Cr</span></div>
+                                                        <a href="javascript:;" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="plyerOuter position-relative text-center">
+                                                        <div class="img mx-auto">
+                                                            <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
+                                                        </div>
+                                                        <div class="player fs-12"><span class="name text-black bg-light rounded-1 d-block">Player 1</span><span class="text-white">8Cr</span></div>
+                                                        <a href="javascript:;" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="row p-4 justify-content-between">
+                                                <div class="col-12">
+                                                    <div class="fs-12 text-white text-center mb-2">Bowlers</div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="plyerOuter position-relative text-center">
+                                                        <div class="img mx-auto">
+                                                            <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
+                                                        </div>
+                                                        <div class="player fs-12"><span class="name text-black bg-light rounded-1 d-block">Player 1</span><span class="text-white">8Cr</span></div>
+                                                        <a href="javascript:;" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="plyerOuter position-relative text-center">
+                                                        <div class="img mx-auto">
+                                                            <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
+                                                        </div>
+                                                        <div class="player fs-12"><span class="name text-black bg-light rounded-1 d-block">Player 1</span><span class="text-white">8Cr</span></div>
+                                                        <a href="javascript:;" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-auto">
+                                                    <div class="plyerOuter position-relative text-center">
+                                                        <div class="img mx-auto">
+                                                            <img class="w-100" src="assets/svg/img/playerImg.png" alt="">
+                                                        </div>
+                                                        <div class="player fs-12"><span class="name text-black bg-light rounded-1 d-block">Player 1</span><span class="text-white">8Cr</span></div>
+                                                        <a href="javascript:;" class="stretched-link"></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     </div>
