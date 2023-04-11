@@ -1,5 +1,5 @@
 // ******************  Home start  ] ***************
-[data-page-name="homePage"] {
+[data-page-name=homePage] {
     @include media-breakpoint(basic) {
         & .cricketheader {
             box-shadow: 0px 0px 6px rgba($black, 0.1) !important;
@@ -44,119 +44,125 @@
             }
         }
 
-        & .tabContents {
-            & .matchesCard {
-                box-shadow: 0px 0px 6px rgba($black, 0.08);
-                & .card-body {
-                    & .teamHeadline {
-                        & .matchteams,
-                        & .notificationOut {
-                            font-size: 11px;
-                        }
-                        & .notificationOut {
-                            color: lighten($success, 5);
-                        }
-                        & .lineupsImg {
-                            width: 18px;
+        & .matchesCard {
+            box-shadow: 0px 0px 6px rgba($black, 0.08);
+            & .card-body {
+                & .teamHeadline {
+                    & .matchteams,
+                    & .notificationOut {
+                        font-size: 11px;
+                    }
+                    & .notificationOut {
+                        color: lighten($success, 5);
+                    }
+                    & .lineupsImg {
+                        width: 18px;
+                    }
+                }
+                & .innerBody {
+                    & .leftSideTeams {
+                        & .teamLogo {
+                            &::before {
+                                left: -50%;
+                                transform: translate(0%, -50%);
+                                // background: rgba($warning, 0.3);
+                            }
                         }
                     }
-                    & .innerBody {
+                    & .rightSideTeams {
+                        & .teamLogo {
+                            &::before {
+                                right: -50%;
+                                transform: translate(0%, -50%);
+                                // background: rgba($success, 0.3);
+                            }
+                        }
+                    }
+                    & .numberOffContest{
+                        font-size: 10px;
+                        padding-top: 3px;
+                        padding-bottom: 3px;
+                        background-color: lighten($theme2, 48);
+                    }
+                    &.firstMatchBody {
                         & .leftSideTeams {
                             & .teamLogo {
                                 &::before {
-                                    left: -50%;
-                                    transform: translate(0%, -50%);
-                                    // background: rgba($warning, 0.3);
+                                    background: rgba($warning, 0.3);
                                 }
                             }
                         }
                         & .rightSideTeams {
                             & .teamLogo {
                                 &::before {
-                                    right: -50%;
-                                    transform: translate(0%, -50%);
-                                    // background: rgba($success, 0.3);
+                                    background: rgba($success, 0.3);
                                 }
                             }
                         }
-                        &.firstMatchBody {
-                            & .leftSideTeams {
-                                & .teamLogo {
-                                    &::before {
-                                        background: rgba($warning, 0.3);
-                                    }
-                                }
-                            }
-                            & .rightSideTeams {
-                                & .teamLogo {
-                                    &::before {
-                                        background: rgba($success, 0.3);
-                                    }
-                                }
-                            }
-                        }
-                        &.secondMatchBody {
-                            & .leftSideTeams {
-                                & .teamLogo {
-                                    &::before {
-                                        background: rgba($success, 0.3);
-                                    }
-                                }
-                            }
-                            & .rightSideTeams {
-                                & .teamLogo {
-                                    &::before {
-                                        background: rgba($info, 0.4);
-                                    }
-                                }
-                            }
-                        }
-                        &.threedMatchBody {
-                            & .leftSideTeams {
-                                & .teamLogo {
-                                    &::before {
-                                        background: rgba($info, 0.4);
-                                    }
-                                }
-                            }
-                            & .rightSideTeams {
-                                & .teamLogo {
-                                    &::before {
-                                        background: rgba($warning, 0.3);
-                                    }
-                                }
-                            }
-                        }
-                        & .firstTeamsName {
-                            font-size: 12px;
-                        }
-                        & .team {
+                    }
+                    &.secondMatchBody {
+                        & .leftSideTeams {
                             & .teamLogo {
-                                width: 40px;
-                                height: 40px;
-                                z-index: 0;
                                 &::before {
-                                    content: "";
-                                    height: 20px;
-                                    width: 100%;
-                                    position: absolute;
-                                    top: 50%;
-                                    z-index: -1;
+                                    background: rgba($success, 0.3);
                                 }
                             }
-                            & .teamName {
-                                font-size: 10px;
+                        }
+                        & .rightSideTeams {
+                            & .teamLogo {
+                                &::before {
+                                    background: rgba($info, 0.4);
+                                }
                             }
                         }
-                        & .matchTimer {
-                            & .pichTime {
-                                font-size: 10px;
-                                color: $theme2;
+                    }
+                    &.threedMatchBody {
+                        & .leftSideTeams {
+                            & .teamLogo {
+                                &::before {
+                                    background: rgba($info, 0.4);
+                                }
                             }
+                        }
+                        & .rightSideTeams {
+                            & .teamLogo {
+                                &::before {
+                                    background: rgba($warning, 0.3);
+                                }
+                            }
+                        }
+                    }
+                    & .firstTeamsName {
+                        font-size: 12px;
+                    }
+                    & .team {
+                        & .teamLogo {
+                            width: 40px;
+                            height: 40px;
+                            z-index: 0;
+                            &::before {
+                                content: "";
+                                height: 20px;
+                                width: 100%;
+                                position: absolute;
+                                top: 50%;
+                                z-index: -1;
+                            }
+                        }
+                        & .teamName {
+                            font-size: 10px;
+                        }
+                    }
+                    & .matchTimer {
+                        & .pichTime {
+                            font-size: 10px;
+                            color: $theme2;
                         }
                     }
                 }
             }
+        }
+        & .tabContents {
         }
     }
 
