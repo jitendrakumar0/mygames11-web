@@ -278,14 +278,46 @@
                             </div>
                         </div>
                     </div>
+                    <!-- *** [ Offcanvas ] *** -->
+                    <div class="offcanvas offcanvas-bottom referoffcanvas referoffcanvas2" tabindex="-1" id="offcanvasBottom2" aria-labelledby="offcanvasBottomLabel2">
+                        <div class="offcanvas-header p-0">
+                            <!-- <div class="offcanvas-title" id="offcanvasBottomLabel2"></div>
+                            <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button> -->
+                            <div class="underline w-100 d-flex align-items-center justify-content-center"><span class="d-inline-flex my-2" data-bs-dismiss="offcanvas" aria-label="Close"></span></div>
+                        </div>
+                        <div class="offcanvas-body small">
+                            <div class="row mx-0">
+                                <div class="col-12 px-0">
+                                    <table class="customTable">
+                                        <thead>
+                                            <tr>
+                                                <th class="text-start">Prize</th>
+                                                <th class="text-end">Rank</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-start">₹ 1000</td>
+                                                <td class="text-end">Rank: 1-5</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <div class="col-12 noData text-center fw-bold text-danger">No Data</div>
+                                <div class="col-12 text-secondary text-center">Note: The actual price money may be different than the prize money mentioned above if there is a tie for any of the winning position. Check</div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- *** [ Offcanvas End ] *** -->
                 </div>
                 <footer class="col-12 footer bottomBar d-flex align-items-center px-0">
                     <div class="row mx-0 align-items-center h-100 w-100">
                         <div class="col-12 p-0 h-100">
-                            <button class="btn btn-theme1 rounded-0 w-100 fw-bold h-100 shadow-none text-white">Leaderboard Prizes Breakup</button>
+                            <button class="btn btn-theme1 rounded-0 w-100 fw-bold h-100 shadow-none text-white" data-bs-toggle="offcanvas" data-bs-target="#offcanvasBottom2">Leaderboard Prizes Breakup</button>
                         </div>
                     </div>
                 </footer>
+        
             </div>
         </main>
         <script src="assets/libs/node_modules/jquery/dist/jquery.min.js"></script>

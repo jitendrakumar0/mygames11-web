@@ -1,9 +1,8 @@
 
 // ? @@@@@@@@@@@@@@@@@@@@@@[  LeaderBoard start  ]@@@@@@@@@@@@@@@@@@@@@@
-
+[data-page-name=Leaderboard] {
     @include media-breakpoint(basic) {
-        [data-page-name=Leaderboard] {
-            .customDropDown {
+        .customDropDown {
                 width: 100%;
                 & button {
                     width: 100%;
@@ -38,8 +37,8 @@
                     font-weight: 600;
                     color: &black;
                 }
-            }
-            & .userImg {
+        }
+        & .userImg {
                 width: 100%;
                 border-radius: 50%;
                 border: 3px solid $theme2;
@@ -71,17 +70,17 @@
                     font-weight: 900;
                     transform: translate(-12.5px, 12.5px);
                 }
-            }
-            & .userName {
+        }
+        & .userName {
                 font-size: 16px;
                 font-weight: 600;
                 margin-top: 15px;
-            }
-            & .teamPoints {
+        }
+        & .teamPoints {
                 font-size: 11px;
                 font-weight: 400;
-            }
-            & .bottomSection {
+        }
+        & .bottomSection {
                 padding-bottom: 60px;
                 border-top-left-radius: 50px;
                 border-top-right-radius: 50px;
@@ -120,8 +119,52 @@
                         background-color: lighten($orange, 38);
                     }
                 }
+        }
+        & .referoffcanvas {
+            height: 40vh;
+            border-radius: 14px 14px 0px 0px;
+            & .offcanvas-header {
+                    & .underline {
+                        & span {
+                            height: 3px;
+                            background-color: $black;
+                            width: 70px;
+                            cursor: pointer;
+                        }
+                    }
+            }
+            & .offcanvas-body {
+                background-color: $white;
+                // border-radius: 14px 14px 0px 0px;
+                padding: 0;
+                & .noData {
+                    font-size: 12px;
+                    background-color: $gray-300;
+                    padding: 8px;
+                }
+                & .customTable {
+                    width: 100%;
+                    & thead {
+                        & th {
+                            padding: 8px;
+                            font-size: 13px;
+                            background-color: $gray-700;
+                            color: $white;
+                        }
+                    }
+                    & tbody {
+                        & tr {
+                            & td {
+                                padding: 8px;
+                                font-size: 13px;
+                                font-weight: 600;
+                            }
+                        }
+                    }
+                }
             }
         }
+        
     }
 
     // No media query necessary for xs breakpoint as it's effectively `@media (min-width: 0) { ... }`
@@ -175,7 +218,7 @@
         @include dark-media-breakpoint-down(sm) {
         }
     }
-
+}
 // ! @@@@@@@@@@@@@@@@@@@@@@[  LeaderBoard end  ]@@@@@@@@@@@@@@@@@@@@@@
 
 
