@@ -2129,4 +2129,34 @@
             }
         }
     }
+
+    .matchesCard {
+        & .card-body {
+            & .innerBody {
+                & .teamLogo {
+                    & .teamCountryLogo {
+                        width: 45px;
+                        z-index: -1;
+                        height: 20px;
+                    }
+                }
+                & .leftSideTeams {
+                    & .teamLogo {
+                        & .teamCountryLogo {
+                            left: -20px;
+                        }
+                    }
+                }
+                & .rightSideTeams {
+                    & .teamLogo {
+                        & .teamCountryLogo {
+                            right: -20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
+
+
